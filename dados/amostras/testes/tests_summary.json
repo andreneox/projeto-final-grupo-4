@@ -1,0 +1,442 @@
+{
+ "mock": {
+  "suite": {
+   "tests": "98",
+   "failures": "0",
+   "errors": "0",
+   "skipped": "0",
+   "time": "28.221",
+   "timestamp": "2026-11-21T21:09:06.214838-03:00"
+  },
+  "files": {
+   "test_analytics": {
+    "passed": 6,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.015000000000000003,
+    "names": [
+     "test_uses_absolute_plc_count_when_available[None-1]",
+     "test_uses_absolute_plc_count_when_available[0-0]",
+     "test_uses_absolute_plc_count_when_available[4-4]",
+     "test_metrics_use_category_losses_and_union_overlaps",
+     "test_open_occurrence_is_counted_until_now",
+     "test_closed_category_display_stays_stable_while_other_category_grows"
+    ]
+   },
+   "test_base_import": {
+    "passed": 4,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.053000000000000005,
+    "names": [
+     "test_parses_repeated_row_pairs",
+     "test_parses_repeated_column_pairs",
+     "test_loads_xlsx_first_sheet",
+     "test_rejects_incomplete_pair"
+    ]
+   },
+   "test_bcd": {
+    "passed": 11,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.010000000000000002,
+    "names": [
+     "test_bcd_round_trip[0]",
+     "test_bcd_round_trip[1]",
+     "test_bcd_round_trip[9]",
+     "test_bcd_round_trip[10]",
+     "test_bcd_round_trip[42]",
+     "test_bcd_round_trip[99]",
+     "test_encode_bcd_rejects_out_of_range[-1]",
+     "test_encode_bcd_rejects_out_of_range[100]",
+     "test_decode_bcd_rejects_invalid_nibbles[26]",
+     "test_decode_bcd_rejects_invalid_nibbles[161]",
+     "test_decode_bcd_rejects_invalid_nibbles[255]"
+    ]
+   },
+   "test_certificates": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.07,
+    "names": [
+     "test_expired_client_certificate_is_rejected"
+    ]
+   },
+   "test_database": {
+    "passed": 4,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.098,
+    "names": [
+     "test_toggle_is_atomic_and_persists_queue",
+     "test_restart_restores_state_and_pending_queue",
+     "test_encoding_failure_rolls_back_state_and_event",
+     "test_multiple_categories_can_be_on"
+    ]
+   },
+   "test_example_bases": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 2.542,
+    "names": [
+     "test_generates_twenty_importable_example_bases"
+    ]
+   },
+   "test_opcua_controls": {
+    "passed": 2,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.004,
+    "names": [
+     "test_server_client_sends_both_control_methods_with_explicit_types",
+     "test_controls_validate_values_and_require_connection"
+    ]
+   },
+   "test_opcua_integration": {
+    "passed": 4,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 18.599,
+    "names": [
+     "test_secure_server_exposes_stable_read_only_nodes",
+     "test_wrong_server_certificate_is_rejected",
+     "test_unknown_client_certificate_is_rejected",
+     "test_dashboard_client_subscribes_to_mock_server"
+    ]
+   },
+   "test_process_configuration": {
+    "passed": 41,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 1.909999999999999,
+    "names": [
+     "test_import_cycle_base_and_start_through_gateway",
+     "test_configuration_persists_and_survives_restart",
+     "test_shift_plan_and_confirmed_reset_preserve_the_measurement_and_previous_day",
+     "test_invalid_values_do_not_change_database[cycle_time_seconds-0]",
+     "test_invalid_values_do_not_change_database[cycle_time_seconds--1]",
+     "test_invalid_values_do_not_change_database[cycle_time_seconds-12]",
+     "test_invalid_values_do_not_change_database[cycle_time_seconds-True]",
+     "test_invalid_values_do_not_change_database[cycle_time_seconds-None]",
+     "test_invalid_values_do_not_change_database[has_prototype-2]",
+     "test_invalid_values_do_not_change_database[has_prototype-True]",
+     "test_invalid_values_do_not_change_database[has_prototype-1]",
+     "test_invalid_values_do_not_change_database[station-0]",
+     "test_invalid_values_do_not_change_database[station-13]",
+     "test_invalid_values_do_not_change_database[station-True]",
+     "test_must_supply_exactly_twelve_distinct_stations[duplicate]",
+     "test_must_supply_exactly_twelve_distinct_stations[missing]",
+     "test_must_supply_exactly_twelve_distinct_stations[extra]",
+     "test_failed_transaction_rolls_back_all_stations",
+     "test_nonfinite_times_are_rejected[inf]",
+     "test_nonfinite_times_are_rejected[nan]",
+     "test_nonfinite_times_are_rejected[-inf]",
+     "test_start_calls_desktop_without_any_input[0]",
+     "test_start_calls_desktop_without_any_input[1]",
+     "test_start_rejects_invalid_desktop_response[2]",
+     "test_start_rejects_invalid_desktop_response[-1]",
+     "test_start_rejects_invalid_desktop_response[True]",
+     "test_start_rejects_invalid_desktop_response[False]",
+     "test_start_rejects_invalid_desktop_response[0.0]",
+     "test_start_rejects_invalid_desktop_response[0]",
+     "test_start_rejects_invalid_desktop_response[result6]",
+     "test_start_rejects_invalid_desktop_response[None]",
+     "test_missing_desktop_api_reports_unavailable",
+     "test_invalid_desktop_url_reports_configuration_error[http://[broken]",
+     "test_invalid_desktop_url_reports_configuration_error[http://desktop:invalid/start]",
+     "test_invalid_desktop_url_reports_configuration_error[ftp://desktop/start]",
+     "test_invalid_desktop_url_reports_configuration_error[http://desktop/start?x=1]",
+     "test_desktop_failure_never_reports_success[timeout]",
+     "test_desktop_failure_never_reports_success[connection]",
+     "test_desktop_failure_never_reports_success[http]",
+     "test_desktop_failure_never_reports_success[json]",
+     "test_concurrent_start_is_rejected_without_second_desktop_call"
+    ]
+   },
+   "test_reference_receiver": {
+    "passed": 5,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.9539999999999998,
+    "names": [
+     "test_reference_receiver_exception_policy",
+     "test_socket_event_does_not_change_opcua_telemetry",
+     "test_tcp_commit_is_persisted_before_ack",
+     "test_exact_retransmission_is_acked_without_reapplying_event",
+     "test_receiver_accepts_both_tcp_formats_and_retains_legacy_shift"
+    ]
+   },
+   "test_tcp_codec": {
+    "passed": 5,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.005,
+    "names": [
+     "test_documented_on_example",
+     "test_documented_off_example",
+     "test_station_twelve_is_binary_integer",
+     "test_decoder_rejects_inconsistent_weekday",
+     "test_time_request_and_response"
+    ]
+   },
+   "test_tcp_sender": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.585,
+    "names": [
+     "test_sender_retries_head_then_preserves_fifo"
+    ]
+   },
+   "test_telemetry": {
+    "passed": 3,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.004,
+    "names": [
+     "test_telemetry_is_updated_only_by_opcua_paths",
+     "test_unknown_paths_do_not_change_telemetry",
+     "test_process_statuses_follow_station_order_and_clear_missing_values"
+    ]
+   },
+   "test_ui": {
+    "passed": 4,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 1.3519999999999999,
+    "names": [
+     "test_window_has_twelve_stations_and_state_is_local",
+     "test_manual_metric_edit_enables_execute_and_clear_restores_defaults",
+     "test_import_publishes_each_snapshot_one_second_apart",
+     "test_import_dialog_remembers_last_directory_across_windows"
+    ]
+   },
+   "test_web_dashboard": {
+    "passed": 2,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.096,
+    "names": [
+     "test_dashboard_serves_page_api_and_websocket",
+     "test_dashboard_serves_the_station_charts_and_e07_assets"
+    ]
+   },
+   "test_work_instruction": {
+    "passed": 4,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.006,
+    "names": [
+     "test_instruction_follows_p07_transitions_and_the_36_second_sequence",
+     "test_andon_interrupts_the_cycle_until_the_next_start",
+     "test_invalid_process_status_and_reconnection_wait_for_a_fresh_start",
+     "test_legacy_simulator_still_supplies_slides_without_plc_status"
+    ]
+   }
+  }
+ },
+ "gateway": {
+  "suite": {
+   "tests": "66",
+   "failures": "0",
+   "errors": "0",
+   "skipped": "2",
+   "time": "8.458",
+   "timestamp": "2026-11-21T21:09:36.197314-03:00"
+  },
+  "files": {
+   "test_application": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.039,
+    "names": [
+     "test_headless_application_starts_and_stops_without_hardware"
+    ]
+   },
+   "test_config": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.006,
+    "names": [
+     "test_example_config_is_safe_and_portable"
+    ]
+   },
+   "test_modbus_transport": {
+    "passed": 16,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.017000000000000008,
+    "names": [
+     "test_writes_and_verifies_cycle_block_and_uses_coil_two_for_start",
+     "test_reads_exact_block_with_configured_address_and_device_id",
+     "test_reads_d16052_as_one_holding_register",
+     "test_reads_all_station_process_statuses_in_one_request",
+     "test_synchronizes_plc_clock_with_one_four_register_write",
+     "test_sets_configured_ack_coil_for_the_plc_to_clear",
+     "test_can_acknowledge_through_holding_register",
+     "test_sets_motor_speed_in_d200_and_rejects_out_of_range",
+     "test_reads_d1200_percentage_from_configured_holding_register[0]",
+     "test_reads_d1200_percentage_from_configured_holding_register[50]",
+     "test_reads_d1200_percentage_from_configured_holding_register[100]",
+     "test_rejects_invalid_d1200_and_closes_connection[-1]",
+     "test_rejects_invalid_d1200_and_closes_connection[101]",
+     "test_rejects_invalid_d1200_and_closes_connection[True]",
+     "test_rejects_missing_d1200_register",
+     "test_line_stop_changes_only_bit_zero_of_d201"
+    ]
+   },
+   "test_motor_output": {
+    "passed": 10,
+    "skipped": 2,
+    "failure": 0,
+    "error": 0,
+    "time": 1.1509999999999991,
+    "names": [
+     "test_applies_d112_and_d1200_with_ramps_and_disables_on_shutdown",
+     "test_repeated_snapshot_does_not_restart_ramp_or_repeat_output",
+     "test_new_target_interrupts_ramp_without_applying_obsolete_target",
+     "test_plc_fault_interrupts_ramp_and_waits_for_fresh_state",
+     "test_shutdown_interrupts_ramp_and_rejects_late_commands",
+     "test_retries_initialization_and_applies_latest_command",
+     "test_rejects_invalid_speed[-1]",
+     "test_rejects_invalid_speed[101]",
+     "test_rejects_invalid_speed[True]",
+     "test_rejects_invalid_speed[1.5]",
+     "test_gpio_driver_starts_disabled_and_releases_pins",
+     "test_gpio_cleanup_continues_after_one_device_close_fails"
+    ]
+   },
+   "test_ntp_client": {
+    "passed": 5,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.059000000000000004,
+    "names": [
+     "test_decodes_valid_sntp_response_using_four_timestamp_offset",
+     "test_rejects_unsynchronized_or_unmatched_sntp_response",
+     "test_worker_retries_then_applies_network_time",
+     "test_worker_applies_system_time_only_once_while_ntp_is_unavailable",
+     "test_queries_an_sntp_server_over_udp"
+    ]
+   },
+   "test_opcua_integration": {
+    "passed": 1,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 4.205,
+    "names": [
+     "test_secure_server_exposes_and_updates_the_same_72_nodes"
+    ]
+   },
+   "test_persistence": {
+    "passed": 3,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.058,
+    "names": [
+     "test_capture_is_durable_and_exact_payload_is_deduplicated",
+     "test_crc_uid_collision_never_discards_a_different_payload",
+     "test_pending_event_survives_database_restart"
+    ]
+   },
+   "test_plc_clock": {
+    "passed": 2,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.009000000000000001,
+    "names": [
+     "test_encodes_ls_datewr_words_in_bcd",
+     "test_encodes_monday_as_weekday_one"
+    ]
+   },
+   "test_plc_poller": {
+    "passed": 15,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.02700000000000001,
+    "names": [
+     "test_reset_during_processing_pulses_until_two_seconds_and_waits_for_plc_state",
+     "test_reset_releases_coil_and_rejects_when_count_stays_nonzero",
+     "test_imports_24_words_per_station_and_pulses_start_without_stopping_polls",
+     "test_partial_upload_prevents_start_and_failed_release_is_retried",
+     "test_start_rechecks_every_station_and_andon_before_pulsing",
+     "test_start_requires_process_status_reading",
+     "test_process_statuses_preserve_station_order_and_clear_on_read_failure",
+     "test_commit_always_happens_before_p1000",
+     "test_same_presented_buffer_is_not_captured_twice",
+     "test_failed_p1000_is_retried_without_losing_persisted_event",
+     "test_control_commands_are_serialized_by_the_poller",
+     "test_ntp_clock_update_is_serialized_before_the_next_read",
+     "test_clock_update_rejects_naive_datetime",
+     "test_forwards_d112_and_d1200_on_each_snapshot",
+     "test_failed_speed_read_disables_motor_without_applying_partial_command"
+    ]
+   },
+   "test_protocol": {
+    "passed": 2,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.002,
+    "names": [
+     "test_decodes_the_existing_sixteen_byte_protocol",
+     "test_event_uid_combines_source_timestamp_and_crc32"
+    ]
+   },
+   "test_register_map": {
+    "passed": 5,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 0.005,
+    "names": [
+     "test_decodes_event_and_packed_andon_nibbles",
+     "test_decodes_uint32_metrics_through_station_twelve",
+     "test_supports_low_word_first_uint32",
+     "test_accepts_queued_event_word_counts_and_rejects_partial_events",
+     "test_decodes_and_validates_d112_motor_command"
+    ]
+   },
+   "test_tcp_sender": {
+    "passed": 3,
+    "skipped": 0,
+    "failure": 0,
+    "error": 0,
+    "time": 1.5570000000000002,
+    "names": [
+     "test_sends_exact_payload_and_accepts_fragmented_ack",
+     "test_rejects_invalid_ack",
+     "test_persisted_events_are_delivered_fifo"
+    ]
+   }
+  }
+ }
+}

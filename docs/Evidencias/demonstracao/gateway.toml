@@ -1,0 +1,64 @@
+[application]
+gateway_id = "LINHA_DEMO"
+database_path = "gateway_demo.db"
+log_path = "gateway_demo.log"
+timezone = "America/Manaus"
+
+[ntp]
+enabled = true
+server = "127.0.0.1"
+port = 123
+timeout_seconds = 1.0
+retry_interval_seconds = 30.0
+sync_interval_seconds = 3600.0
+apply_timeout_seconds = 5.0
+
+[motor_output]
+enabled = false
+
+[modbus]
+enabled = true
+port = "socket://127.0.0.1:5020"
+baudrate = 115200
+bytesize = 8
+parity = "N"
+stopbits = 1
+device_id = 1
+timeout_seconds = 0.5
+retries = 2
+reconnect_seconds = 2.0
+poll_interval_seconds = 0.25
+clock_address = 0
+clock_apply_kind = "coil"
+clock_apply_address = 1
+clock_apply_active_value = 1
+d100_address = 100
+motor_speed_address = 200
+line_control_address = 201
+production_count_address = 15052
+process_status_address = 651
+event_byte_order = "big"
+uint32_word_order = "low_high"
+time_scale_to_seconds = 0.1
+ack_kind = "coil"
+ack_address = 0
+ack_active_value = 1
+cycle_base_address = 16001
+simulation_start_address = 2
+reset_base_address = 3
+
+[tcp]
+host = "127.0.0.1"
+port = 15010
+connect_timeout_seconds = 5.0
+send_timeout_seconds = 5.0
+response_timeout_seconds = 5.0
+
+[opcua]
+enabled = true
+endpoint = "opc.tcp://0.0.0.0:4850/mock-linha/"
+namespace_uri = "urn:mock-linha:telemetria:v1"
+application_uri = "urn:mock-linha:servidor"
+certificate_path = "C:/Users/johng/OneDrive/Documentos/Mestrado/Lean/LeanManufacturing/hardware/certificates/server_cert.der"
+private_key_path = "C:/Users/johng/OneDrive/Documentos/Mestrado/Lean/LeanManufacturing/hardware/certificates/server_key.pem"
+trusted_clients_dir = "C:/Users/johng/OneDrive/Documentos/Mestrado/Lean/LeanManufacturing/hardware/certificates/trusted/clients"

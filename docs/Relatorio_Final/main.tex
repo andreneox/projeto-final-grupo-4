@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazilian]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{float}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{caption}
+\usepackage{textcomp}
+\usepackage[hidelinks]{hyperref}
+
+% Fonte Arial (Helvetica/Nimbus Sans, equivalente metrico da Arial) e texto todo preto
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\captionsetup{font=small,labelfont=bf,labelsep=endash}
+\captionsetup[table]{position=top}
+
+\geometry{top=3cm, bottom=2cm, left=3cm, right=2cm}
+
+\onehalfspacing
+\setlength{\emergencystretch}{3em}   % evita linhas estouradas com nomes de arquivos longos
+% permite quebrar linha depois de "_" (nomes de arquivos longos)
+\DeclareRobustCommand{\_}{\textunderscore\allowbreak}
+\setlength{\LTpre}{6pt}
+\setlength{\LTpost}{6pt}
+
+% codigo e enderecos (D01651, /api/snapshot) em fonte monoespacada que quebra linha
+% depois de / . : - = , (evita que caminhos longos vazem da margem)
+\ExplSyntaxOn
+\tl_new:N \l__cod_tl
+\NewDocumentCommand{\cod}{m}
+  {
+    \tl_set:Nn \l__cod_tl {#1}
+    \regex_replace_all:nnN { ([\/\.\:\-\=\,]) } { \1 \c{allowbreak} } \l__cod_tl
+    \texttt{\small \tl_use:N \l__cod_tl}
+  }
+\ExplSyntaxOff
+
+\begin{document}
+
+
+\input{capa}
+
+\newpage
+\tableofcontents
+\newpage
+
+
+\input{introducao}
+\input{secao1_arquitetura}
+\input{secao2_clp}
+\input{secao3_raspberry}
+\input{secao4_desktop}
+\input{secao5_dashboard}
+\input{secao6_it_digital}
+\input{secao7_apis}
+\input{secao8_testes}
+\input{conclusao}
+\input{referencias}
+\input{anexo}
+
+\end{document}

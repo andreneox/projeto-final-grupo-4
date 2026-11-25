@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1400" viewBox="0 0 2000 1400" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#12305c"/></marker>
+    <style>
+      .titulo{font-size:38px;font-weight:700;fill:#12305c}
+      .sub{font-size:22px;fill:#4a5a70}
+      .nivel{font-size:46px;font-weight:700;fill:#fff}
+      .nome{font-size:22px;font-weight:600;fill:#fff}
+      .cx{fill:#fff;stroke:#12305c;stroke-width:2.5}
+      .sim{fill:#fff;stroke:#b45309;stroke-width:2.5;stroke-dasharray:10 7}
+      .h{font-size:26px;font-weight:700;fill:#12305c;text-anchor:middle}
+      .hs{font-size:26px;font-weight:700;fill:#92400e;text-anchor:middle}
+      .t{font-size:21px;fill:#28384d;text-anchor:middle}
+      .r{font-size:20px;font-weight:600;fill:#12305c}
+      .l{fill:none;stroke:#12305c;stroke-width:3.5}
+      .ls{fill:none;stroke:#b45309;stroke-width:3.5;stroke-dasharray:10 7}
+    </style>
+    <marker id="setas" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#b45309"/></marker>
+  </defs>
+  <rect width="2000" height="1400" fill="#fff"/>
+  <text x="40" y="58" class="titulo">Arquitetura L0–L4 — Cenário 25, linha de montagem de ar-condicionado (12 postos)</text>
+  <text x="40" y="94" class="sub">Equipe 4 · linha cheia: linha real · tracejado: simulador Desktop, que substitui o CLP e o Gateway</text>
+
+  <!-- faixas -->
+  <g>
+    <rect x="40" y="125" width="1920" height="185" rx="14" fill="#e8f1fb"/><rect x="40" y="125" width="190" height="185" rx="14" fill="#12305c"/>
+    <rect x="40" y="350" width="1920" height="185" rx="14" fill="#e6f5f2"/><rect x="40" y="350" width="190" height="185" rx="14" fill="#0f6b5e"/>
+    <rect x="40" y="575" width="1920" height="230" rx="14" fill="#f0ecfa"/><rect x="40" y="575" width="190" height="230" rx="14" fill="#5b3a9e"/>
+    <rect x="40" y="850" width="1920" height="180" rx="14" fill="#eef1f4"/><rect x="40" y="850" width="190" height="180" rx="14" fill="#46566b"/>
+    <rect x="40" y="1075" width="1920" height="290" rx="14" fill="#fdf3e3"/><rect x="40" y="1075" width="190" height="290" rx="14" fill="#8a4b08"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="135" y="215" class="nivel">L4</text><text x="135" y="252" class="nome">Decisão</text>
+    <text x="135" y="440" class="nivel">L3</text><text x="135" y="477" class="nome">Serviços</text>
+    <text x="135" y="688" class="nivel">L2</text><text x="135" y="725" class="nome">Integração</text>
+    <text x="135" y="938" class="nivel">L1</text><text x="135" y="975" class="nome">Dados</text>
+    <text x="135" y="1218" class="nivel">L0</text><text x="135" y="1255" class="nome">Processo</text>
+  </g>
+
+  <!-- L4 -->
+  <rect x="270" y="150" width="520" height="135" rx="10" class="cx"/><text x="530" y="200" class="h">Dashboard e Andon Digital</text><text x="530" y="238" class="t">estados, paradas, OEE, Start e base</text>
+  <rect x="845" y="150" width="520" height="135" rx="10" class="cx"/><text x="1105" y="200" class="h">Gráficos dos postos</text><text x="1105" y="238" class="t">tempo de ciclo × Takt</text>
+  <rect x="1420" y="150" width="520" height="135" rx="10" class="cx"/><text x="1680" y="200" class="h">IT Digital E07</text><text x="1680" y="238" class="t">instrução passo a passo ao operador</text>
+
+  <!-- L3 -->
+  <rect x="270" y="375" width="520" height="135" rx="10" class="cx"/><text x="530" y="425" class="h">Indicadores</text><text x="530" y="463" class="t">OEE, produção, paradas, ciclos</text>
+  <rect x="845" y="375" width="520" height="135" rx="10" class="cx"/><text x="1105" y="425" class="h">API HTTP e WebSocket</text><text x="1105" y="463" class="t">FastAPI</text>
+  <rect x="1420" y="375" width="520" height="135" rx="10" class="cx"/><text x="1680" y="425" class="h">Sincronismo da E07</text><text x="1680" y="463" class="t">segue o estado do posto P07</text>
+
+  <path d="M1105 372 V 312" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/><text x="1125" y="340" class="r">HTTP / WebSocket (TCP 8080)</text>
+
+  <!-- L2 -->
+  <rect x="270" y="605" width="560" height="170" rx="10" class="cx"/><text x="550" y="650" class="h">Gateway (Raspberry Pi)</text><text x="550" y="687" class="t">cliente Modbus RTU · servidor OPC UA</text><text x="550" y="717" class="t">remetente TCP de Andon · GPIO</text><text x="550" y="747" class="t">cliente SNTP (relógio do CLP)</text>
+  <rect x="1340" y="605" width="600" height="170" rx="10" class="cx"/><text x="1640" y="655" class="h">Receptor (Windows)</text><text x="1640" y="695" class="t">cliente OPC UA</text><text x="1640" y="727" class="t">servidor TCP de Andon</text>
+  <path d="M833 655 H 1335" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/><text x="1084" y="642" class="r" text-anchor="middle">OPC UA 4840 — telemetria e comandos</text>
+  <path d="M833 735 H 1335" class="l" marker-end="url(#seta)"/><text x="1084" y="722" class="r" text-anchor="middle">TCP 15000 — eventos de Andon (com ACK)</text>
+  <path d="M1640 602 V 537" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/><text x="1660" y="562" class="r">chamadas internas</text>
+
+  <!-- L1 -->
+  <rect x="430" y="875" width="280" height="130" rx="10" class="cx"/><text x="570" y="922" class="h">SQLite</text><text x="570" y="955" class="t">fila durável</text><text x="570" y="983" class="t">do Gateway</text>
+  <path d="M570 778 V 870" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/>
+  <rect x="1340" y="875" width="330" height="130" rx="10" class="cx"/><text x="1505" y="922" class="h">SQLite</text><text x="1505" y="955" class="t">histórico do receptor</text>
+  <path d="M1505 778 V 870" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/>
+
+  <!-- L0 -->
+  <rect x="270" y="1105" width="440" height="235" rx="10" class="cx"/><text x="490" y="1155" class="h">CLP LS XGK-CPUE</text><text x="490" y="1197" class="t">12 máquinas de estado</text><text x="490" y="1229" class="t">tempos de ciclo e fila de Andon</text><text x="490" y="1261" class="t">botões e sensores da bancada</text>
+  <rect x="745" y="1105" width="400" height="235" rx="10" class="cx"/><text x="945" y="1155" class="h">Esteira</text><text x="945" y="1197" class="t">driver DRV8825</text><text x="945" y="1229" class="t">motor de passo</text>
+  <path d="M340 778 V 1100" class="l" marker-start="url(#seta)" marker-end="url(#seta)"/><text x="360" y="1048" class="r">Modbus RTU (RS-232)</text>
+  <path d="M790 778 V 1100" class="l" marker-end="url(#seta)"/><text x="810" y="1048" class="r">GPIO (STEP/DIR/EN)</text>
+
+  <rect x="1340" y="1105" width="600" height="235" rx="10" class="sim"/><text x="1640" y="1155" class="hs">Simulador Desktop (PyQt6)</text><text x="1640" y="1197" class="t">Andon, Takt e ciclo dos 12 postos</text><text x="1640" y="1229" class="t">servidor OPC UA (72 variáveis) e remetente TCP</text><text x="1640" y="1261" class="t">sem métodos Linha/*, estado e produção</text>
+  <path d="M1800 1102 V 780" class="ls" marker-start="url(#setas)" marker-end="url(#setas)"/><text x="1785" y="920" class="r" text-anchor="end"></text><text x="1815" y="920" class="r" fill="#92400e">OPC UA</text><text x="1815" y="946" class="r" fill="#92400e">4840 e</text><text x="1815" y="972" class="r" fill="#92400e">TCP 15000</text>
+</svg>

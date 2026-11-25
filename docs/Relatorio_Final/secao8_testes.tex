@@ -1,0 +1,52 @@
+\section{Verificação e testes automatizados}
+
+Os testes foram executados em 21/11/2026 com \cod{pytest 8.3.5} no ambiente descrito na seção \ref{sec:materiais}, a partir das pastas \cod{simulador/} e \cod{hardware/} (\cod{..\textbackslash venv\textbackslash Scripts\textbackslash python.exe -m pytest -v}). Nenhum teste exige hardware: o Modbus, o TCP, o SNTP e o OPC UA são exercitados com simuladores locais e servidores reais em portas efêmeras.
+
+\begin{itemize}
+    \item \textbf{Simulador:} 98 testes, 98 aprovados, 0 falhas, em 28,2 s.
+    \item \textbf{Gateway:} 66 testes, 64 aprovados, 0 falhas e 2 pulados, em 8,5 s. Os dois testes pulados (\cod{test\_gpio\_driver\_starts\_disabled\_and\_releases\_pins} e \cod{test\_gpio\_cleanup\_continues\_after\_one\_device\_close\_fails}) dependem da biblioteca \cod{gpiozero}, instalada somente na Raspberry Pi (\cod{sys\_platform == 'linux'}).
+\end{itemize}
+
+{\footnotesize
+\begin{longtable}{|>{\raggedright\arraybackslash}p{2.0cm}|>{\raggedright\arraybackslash}p{4.2cm}|>{\centering\arraybackslash}p{1.6cm}|>{\raggedright\arraybackslash}p{6.8cm}|}
+\caption{Testes automatizados por arquivo (resultado de \cod{--junitxml}).}\label{tab:testes}\\
+\hline
+\textbf{Projeto} & \textbf{Arquivo} & \textbf{Aprovados} & \textbf{O que verifica} \\ \hline
+\endfirsthead
+\hline
+\textbf{Projeto} & \textbf{Arquivo} & \textbf{Aprovados} & \textbf{O que verifica} \\ \hline
+\endhead
+Simulador & \cod{test\_analytics.py} & 6 & Contador absoluto do CLP, união de paradas sobrepostas, ocorrência aberta e estabilidade por categoria. \\ \hline
+Simulador & \cod{test\_base\_import.py} & 4 & Planilha em pares de linhas e de colunas, primeira aba do .xlsx e par incompleto. \\ \hline
+Simulador & \cod{test\_bcd.py} & 11 & Ida e volta BCD de 0 a 99 e rejeição de valores e nibbles inválidos. \\ \hline
+Simulador & \cod{test\_certificates.py} & 1 & Certificado de cliente vencido é recusado. \\ \hline
+Simulador & \cod{test\_database.py} & 4 & Clique atômico com fila, reinício com fila pendente, rollback e categorias simultâneas. \\ \hline
+Simulador & \cod{test\_example\_bases.py} & 1 & Geração e importação das planilhas de exemplo. \\ \hline
+Simulador & \cod{test\_opcua\_controls.py} & 2 & Métodos de motor e parada com tipos explícitos e validação. \\ \hline
+Simulador & \cod{test\_opcua\_integration.py} & 4 & 72 nós somente leitura, certificado de servidor errado, cliente desconhecido e assinatura pela Dashboard. \\ \hline
+Simulador & \cod{test\_process\_configuration.py} & 41 & Importação e Start pelo Gateway, persistência, plano do turno, reset e 30 casos de valores inválidos. \\ \hline
+Simulador & \cod{test\_reference\_receiver.py} & 5 & Política de exceções, COMMIT antes do ACK, reenvio idêntico e formatos 00 01/00 02. \\ \hline
+Simulador & \cod{test\_tcp\_codec.py} & 5 & Exemplos ON/OFF documentados, posto 12 como 00 0C, dia da semana e pedido de hora. \\ \hline
+Simulador & \cod{test\_tcp\_sender.py} & 1 & Reenvio do primeiro evento preservando a ordem FIFO. \\ \hline
+Simulador & \cod{test\_telemetry.py} & 3 & Telemetria alterada somente pelo OPC UA e ordem dos 12 estados. \\ \hline
+Simulador & \cod{test\_ui.py} & 4 & Janela com 12 postos, edição de métricas, importação com intervalo de 1 s. \\ \hline
+Simulador & \cod{test\_web\_dashboard.py} & 2 & Página, API e WebSocket; página de gráficos e arquivos da E07. \\ \hline
+Simulador & \cod{test\_work\_instruction.py} & 4 & Sequência de 36 s, interrupção por Andon, estado inválido e reconexão. \\ \hline
+Gateway & \cod{test\_application.py} & 1 & Partida e parada do serviço sem hardware. \\ \hline
+Gateway & \cod{test\_config.py} & 1 & Configuração de exemplo segura (Modbus desabilitado) e portável. \\ \hline
+Gateway & \cod{test\_modbus\_transport.py} & 16 & Endereços, FC03/04/05/06/16, base de ciclos, relógio, ACK, D1200 e bit 0 de D1201. \\ \hline
+Gateway & \cod{test\_motor\_output.py} & 10 (+2 pulados) & Rampas, interrupção por novo comando ou falha, desligamento e validação de velocidade. \\ \hline
+Gateway & \cod{test\_ntp\_client.py} & 5 & Decodificação SNTP, rejeição de resposta não sincronizada, nova tentativa e hora do sistema uma única vez. \\ \hline
+Gateway & \cod{test\_opcua\_integration.py} & 1 & Servidor seguro com os mesmos 72 nós atualizados. \\ \hline
+Gateway & \cod{test\_persistence.py} & 3 & Captura durável, deduplicação do pacote, colisão de CRC32 e evento pendente após reinício. \\ \hline
+Gateway & \cod{test\_plc\_clock.py} & 2 & Palavras BCD de DATEWR e segunda-feira = 1. \\ \hline
+Gateway & \cod{test\_plc\_poller.py} & 15 & COMMIT antes de P10000, ACK repetido sem perda, Start, reset e serialização de comandos. \\ \hline
+Gateway & \cod{test\_protocol.py} & 2 & Pacote de 16 bytes e identificador com CRC32. \\ \hline
+Gateway & \cod{test\_register\_map.py} & 5 & Nibbles de Andon, UInt32 até o P12, ordem de palavras e D112. \\ \hline
+Gateway & \cod{test\_tcp\_sender.py} & 3 & Pacote exato com ACK fragmentado, ACK inválido e FIFO persistente. \\ \hline
+\end{longtable}
+}
+
+Os testes complementam as execuções descritas nas seções anteriores: os comportamentos que dependem de falhas difíceis de provocar no hardware - colisão de CRC32, queda da conexão entre o COMMIT e o ACK, certificado vencido, ACK TCP fragmentado, falha do banco no meio de um clique - são verificados aqui de forma determinística.
+
+\newpage

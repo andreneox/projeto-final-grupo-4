@@ -1,0 +1,6 @@
+pymodbus[serial]==3.11.3
+asyncua==1.1.5
+cryptography==44.0.2
+tzdata==2026.4; sys_platform == "win32"
+pigpio==1.78; sys_platform == "linux"
+gpiozero==2.0.1; sys_platform == "linux"

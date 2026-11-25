@@ -1,0 +1,992 @@
+[
+ {
+  "at": "2026-11-21T21:14:02",
+  "method": "GET",
+  "path": "/api/version",
+  "status": 200,
+  "ms": 426.3,
+  "response": {
+   "revision": "2026-11-20.01",
+   "features": [
+    "station_time_chart",
+    "reconciled_downtime",
+    "digital_work_instruction_e07"
+   ],
+   "performance_formula": "production_current / estimated_production * 100",
+   "estimated_production": "integer part of current expected production"
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:03",
+  "method": "PUT",
+  "path": "/api/process/production-plan",
+  "status": 200,
+  "ms": 575.2,
+  "response": {
+   "production_target": 90,
+   "available_time_minutes": 60.0
+  },
+  "request": {
+   "production_target": 90,
+   "available_time_minutes": 60.0
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:03",
+  "method": "GET",
+  "path": "/api/process/production-plan",
+  "status": 200,
+  "ms": 420.8,
+  "response": {
+   "production_target": 90,
+   "available_time_minutes": 60.0
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:04",
+  "method": "GET",
+  "path": "/api/process/cycle-base",
+  "status": 200,
+  "ms": 466.8,
+  "response": {
+   "available": true,
+   "ready": false
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:09",
+  "method": "POST",
+  "path": "/api/process/cycle-base?filename=base_demo.csv",
+  "status": 200,
+  "ms": 5257.3,
+  "response": {
+   "ready": true,
+   "message": "Base carregada e conferida no CLP."
+  },
+  "request": "<1223 bytes: base_demo.csv>"
+ },
+ {
+  "at": "2026-11-21T21:14:09",
+  "method": "GET",
+  "path": "/api/process/cycle-base",
+  "status": 200,
+  "ms": 437.1,
+  "response": {
+   "available": true,
+   "ready": true
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:10",
+  "method": "POST",
+  "path": "/api/process/start",
+  "status": 403,
+  "ms": 391.7,
+  "response": {
+   "detail": "Abra a dashboard para executar este comando do CLP."
+  }
+ },
+ {
+  "at": "2026-11-21T21:14:13",
+  "method": "POST",
+  "path": "/api/process/start",
+  "status": 200,
+  "ms": 2976.3,
+  "response": {
+   "result": 0,
+   "confirmed": true,
+   "message": "Início confirmado pelo CLP."
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:20",
+  "method": "GET",
+  "path": "/api/snapshot",
+  "status": 200,
+  "ms": 257.5,
+  "response": {
+   "opcua": {
+    "connected": true,
+    "status": "conectado",
+    "last_seen": "2026-11-22T00:18:19.539209+00:00",
+    "plc_production_count": 2,
+    "stations": {
+     "1": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 8.1,
+      "cycle_time": 8.6,
+      "process_status": 3
+     },
+     "2": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 9.1,
+      "cycle_time": 8.700000000000001,
+      "process_status": 3
+     },
+     "3": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 7.4,
+      "cycle_time": 7.800000000000001,
+      "process_status": 3
+     },
+     "4": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 10.200000000000001,
+      "cycle_time": 10.5,
+      "process_status": 3
+     },
+     "5": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 12.100000000000001,
+      "cycle_time": 11.8,
+      "process_status": 3
+     },
+     "6": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 9.3,
+      "cycle_time": 9.9,
+      "process_status": 3
+     },
+     "7": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 36.4,
+      "cycle_time": 49.5,
+      "process_status": 2
+     },
+     "8": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 5.9,
+      "cycle_time": 6.1000000000000005,
+      "process_status": 0
+     },
+     "9": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 6.6000000000000005,
+      "cycle_time": 6.4,
+      "process_status": 0
+     },
+     "10": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 6.9,
+      "cycle_time": 7.2,
+      "process_status": 0
+     },
+     "11": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 10.8,
+      "cycle_time": 10.700000000000001,
+      "process_status": 2
+     },
+     "12": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 8.1,
+      "cycle_time": 8.1,
+      "process_status": 0
+     }
+    }
+   },
+   "imported_cycle_base": {
+    "filename": "base_demo.csv",
+    "takt_times": [
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0
+    ]
+   },
+   "analytics": {
+    "period_start": "2026-11-21T20:14:12.113360-04:00",
+    "period_end": "2026-11-21T20:18:20.222013-04:00",
+    "stations": {
+     "1": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "2": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "3": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "4": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "5": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "6": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "7": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "8": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "9": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 66.7,
+      "oee": 18.8
+     },
+     "10": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "11": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     },
+     "12": {
+      "availability": 84.7,
+      "performance": 33.3,
+      "quality": 100.0,
+      "oee": 28.2
+     }
+    },
+    "line": {
+     "availability": 84.7,
+     "performance": 33.3,
+     "quality": 66.7,
+     "oee": 18.8
+    },
+    "timing": {
+     "calculation_revision": "2026-11-20.01",
+     "measurement_started_at": "2026-11-21T20:14:12.113360-04:00",
+     "elapsed_seconds": 248.108653,
+     "stopped_seconds": 38.0,
+     "production_seconds": 210.108653,
+     "expected_production": 6.202716325,
+     "estimated_production": 6,
+     "production_target": 90,
+     "available_time_minutes": 60.0,
+     "currently_stopped": false,
+     "performance_ready": true,
+     "performance_updated_at": "2026-11-21T20:18:20.222013-04:00",
+     "last_p12_completed_at": null,
+     "performance_elapsed_seconds": 248.108653,
+     "performance_expected_production": 6,
+     "performance_production_target": 90,
+     "performance_available_time_minutes": 60.0
+    },
+    "downtime_minutes": {
+     "qualidade": 0.13,
+     "equipamento": 0.3,
+     "processo": 0.0,
+     "material": 0.2,
+     "total": 0.63
+    },
+    "downtime_overlap_minutes": 0.0,
+    "downtime_seconds": {
+     "qualidade": 8.0,
+     "equipamento": 18.0,
+     "processo": 0.0,
+     "material": 12.0,
+     "total": 38.0,
+     "overlap": 0.0
+    },
+    "production_counts": {
+     "stations": {
+      "1": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "2": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "3": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "4": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "5": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "6": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "7": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "8": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "9": {
+       "produced": 2,
+       "defective": 1,
+       "good": 2,
+       "total": 3,
+       "completed_cycles": 0
+      },
+      "10": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "11": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 0
+      },
+      "12": {
+       "produced": 2,
+       "defective": 0,
+       "good": 2,
+       "total": 2,
+       "completed_cycles": 2
+      }
+     },
+     "line": {
+      "produced": 2,
+      "defective": 1,
+      "good": 2,
+      "total": 3
+     }
+    }
+   }
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:20",
+  "method": "GET",
+  "path": "/api/instruction/e07",
+  "status": 200,
+  "ms": 238.6,
+  "response": {
+   "station": 7,
+   "source": "plc",
+   "slide": 4,
+   "status": "running",
+   "cycle_id": "plc-p07-4",
+   "elapsed_seconds": 28.59400000000096,
+   "cycle_time_seconds": 0,
+   "short_cycle": false,
+   "stop_station": null,
+   "stop_category": "",
+   "sequence": 4
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:20",
+  "method": "GET",
+  "path": "/api/process/configuration",
+  "status": 200,
+  "ms": 262.2,
+  "response": {
+   "stations": [
+    {
+     "station": 1,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 2,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 3,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 4,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 5,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 6,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 7,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 8,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 9,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 10,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 11,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    },
+    {
+     "station": 12,
+     "cycle_time_seconds": 57.5,
+     "has_prototype": 0
+    }
+   ],
+   "updated_at": "2026-11-22T00:13:54.730019+00:00"
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:20",
+  "method": "POST",
+  "path": "/api/runtime/events",
+  "status": 422,
+  "ms": 272.4,
+  "response": {
+   "detail": [
+    {
+     "type": "less_than_equal",
+     "loc": [
+      "body",
+      "andon",
+      "station"
+     ],
+     "msg": "Input should be less than or equal to 12",
+     "input": 13,
+     "ctx": {
+      "le": 12
+     }
+    }
+   ]
+  },
+  "request": {
+   "kind": "andon",
+   "occurred_at": "2026-11-21T10:00:00-04:00",
+   "station": 13,
+   "button_id": 1,
+   "is_on": true
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:23",
+  "method": "POST",
+  "path": "/api/process/clear-base",
+  "status": 200,
+  "ms": 2656.2,
+  "response": {
+   "message": "Base do dia limpa. Aguardando o próximo Start confirmado."
+  }
+ },
+ {
+  "at": "2026-11-21T21:18:27",
+  "method": "GET",
+  "path": "/api/snapshot",
+  "status": 200,
+  "ms": 278.4,
+  "response": {
+   "opcua": {
+    "connected": true,
+    "status": "conectado",
+    "last_seen": "2026-11-22T00:18:27.677808+00:00",
+    "plc_production_count": 0,
+    "stations": {
+     "1": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 8.1,
+      "cycle_time": 8.6,
+      "process_status": 0
+     },
+     "2": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 9.1,
+      "cycle_time": 8.700000000000001,
+      "process_status": 0
+     },
+     "3": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 7.4,
+      "cycle_time": 7.800000000000001,
+      "process_status": 0
+     },
+     "4": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 10.200000000000001,
+      "cycle_time": 10.5,
+      "process_status": 0
+     },
+     "5": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 12.100000000000001,
+      "cycle_time": 11.8,
+      "process_status": 0
+     },
+     "6": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 9.3,
+      "cycle_time": 9.9,
+      "process_status": 0
+     },
+     "7": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 36.4,
+      "cycle_time": 49.5,
+      "process_status": 0
+     },
+     "8": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 5.9,
+      "cycle_time": 6.1000000000000005,
+      "process_status": 0
+     },
+     "9": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 6.6000000000000005,
+      "cycle_time": 6.4,
+      "process_status": 0
+     },
+     "10": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 6.9,
+      "cycle_time": 7.2,
+      "process_status": 0
+     },
+     "11": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 10.8,
+      "cycle_time": 10.700000000000001,
+      "process_status": 0
+     },
+     "12": {
+      "andon": {
+       "qualidade": false,
+       "equipamento": false,
+       "processo": false,
+       "material": false
+      },
+      "takt_time": 8.1,
+      "cycle_time": 8.1,
+      "process_status": 0
+     }
+    }
+   },
+   "imported_cycle_base": {
+    "filename": "base_demo.csv",
+    "takt_times": [
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0,
+     40.0
+    ]
+   },
+   "analytics": {
+    "period_start": "2026-11-21T20:18:27.883442-04:00",
+    "period_end": "2026-11-21T20:18:27.883442-04:00",
+    "stations": {
+     "1": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "2": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "3": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "4": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "5": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "6": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "7": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "8": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "9": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "10": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "11": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     },
+     "12": {
+      "availability": 100.0,
+      "performance": null,
+      "quality": 100.0,
+      "oee": null
+     }
+    },
+    "line": {
+     "availability": 100.0,
+     "performance": null,
+     "quality": 100.0,
+     "oee": null
+    },
+    "timing": {
+     "calculation_revision": "2026-11-20.01",
+     "measurement_started_at": null,
+     "elapsed_seconds": 0.0,
+     "stopped_seconds": 0.0,
+     "production_seconds": 0,
+     "expected_production": 0.0,
+     "estimated_production": 0,
+     "production_target": 90,
+     "available_time_minutes": 60.0,
+     "currently_stopped": false,
+     "performance_ready": false,
+     "performance_updated_at": null,
+     "last_p12_completed_at": null,
+     "performance_elapsed_seconds": 0.0,
+     "performance_expected_production": 0,
+     "performance_production_target": 90,
+     "performance_available_time_minutes": 60.0
+    },
+    "downtime_minutes": {
+     "qualidade": 0.0,
+     "equipamento": 0.0,
+     "processo": 0.0,
+     "material": 0.0,
+     "total": 0.0
+    },
+    "downtime_overlap_minutes": 0.0,
+    "downtime_seconds": {
+     "qualidade": 0.0,
+     "equipamento": 0.0,
+     "processo": 0.0,
+     "material": 0.0,
+     "total": 0.0,
+     "overlap": 0.0
+    },
+    "production_counts": {
+     "stations": {
+      "1": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "2": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "3": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "4": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "5": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "6": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "7": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "8": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "9": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "10": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "11": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      },
+      "12": {
+       "produced": 0,
+       "defective": 0,
+       "good": 0,
+       "total": 0,
+       "completed_cycles": 0
+      }
+     },
+     "line": {
+      "produced": 0,
+      "defective": 0,
+      "good": 0,
+      "total": 0
+     }
+    }
+   }
+  }
+ }
+]

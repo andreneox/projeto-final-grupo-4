@@ -1,0 +1,898 @@
+[
+{
+"t": 0.7,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 1.84,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 3.0,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 4.19,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 5.26,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 6.33,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 7.39,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 8.44,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 9.53,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 10.62,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 11.69,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 12.8,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 13.89,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 15.0,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 16.28,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 17.55,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 18.88,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 20.05,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 21.26,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 22.41,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 23.51,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 24.59,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 25.67,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 26.7,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 27.73,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 28.76,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 29.8,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 30.83,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 31.84,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 32.89,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 33.97,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 35.05,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 36.11,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 37.17,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 38.2,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 39.28,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 40.31,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 41.34,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 42.36,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 43.38,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 44.39,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 45.39,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 46.42,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 47.45,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 48.45,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 49.48,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 50.5,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 51.56,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 52.59,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 53.64,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 54.69,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 55.75,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 56.81,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 57.94,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 59.0,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 60.06,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 61.11,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 62.16,
+"p07": 0,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 63.19,
+"p07": 1,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 64.2,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 0.375,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 71.83,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 7.875,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 75.53,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 11.609000000000378,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 76.81,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 12.875,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 78.14,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 14.140999999999622,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 81.94,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 18.0,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 83.17,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 19.23400000000038,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 84.36,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 20.43699999999808,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 85.51,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 21.625,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 86.97,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 22.82800000000134,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 88.09,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 24.18699999999808,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 89.2,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 25.29699999999866,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 90.28,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 26.42199999999866,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 91.36,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 27.51599999999962,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 92.45,
+"p07": 2,
+"slide": 4,
+"status": "running",
+"elapsed_seconds": 28.57800000000134,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 93.58,
+"p07": 2,
+"slide": 5,
+"status": "running",
+"elapsed_seconds": 29.68699999999808,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 97.2,
+"p07": 2,
+"slide": 5,
+"status": "running",
+"elapsed_seconds": 33.25,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 98.45,
+"p07": 2,
+"slide": 5,
+"status": "running",
+"elapsed_seconds": 34.5,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 99.72,
+"p07": 2,
+"slide": 5,
+"status": "running",
+"elapsed_seconds": 35.75,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 100.92,
+"p07": 1,
+"slide": 1,
+"status": "complete",
+"elapsed_seconds": 36,
+"cycle_id": "plc-p07-1"
+},
+{
+"t": 104.69,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 2.6559999999990396,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 105.83,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 3.827999999997701,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 107.0,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 5.0,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 108.28,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 6.234000000000378,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 109.42,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 7.421999999998661,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 110.53,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 8.53099999999904,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 111.62,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 9.639999999999418,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 112.72,
+"p07": 2,
+"slide": 3,
+"status": "running",
+"elapsed_seconds": 10.75,
+"cycle_id": "plc-p07-2"
+},
+{
+"t": 113.97,
+"p07": 2,
+"slide": 1,
+"status": "paused",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 120.73,
+"p07": 2,
+"slide": 1,
+"status": "paused",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 121.81,
+"p07": 2,
+"slide": 1,
+"status": "paused",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 122.92,
+"p07": 2,
+"slide": 1,
+"status": "paused",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 124.05,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 127.69,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 128.91,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 130.0,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 131.11,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 132.31,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 133.44,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 134.56,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 135.64,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 136.84,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 138.08,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 139.47,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 140.61,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 141.73,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 142.92,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 144.16,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 145.3,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 146.44,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 147.86,
+"p07": 2,
+"slide": 1,
+"status": "interrupted",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 149.0,
+"p07": 1,
+"slide": 1,
+"status": "waiting",
+"elapsed_seconds": 0,
+"cycle_id": ""
+},
+{
+"t": 150.22,
+"p07": 2,
+"slide": 2,
+"status": "running",
+"elapsed_seconds": 0.48400000000037835,
+"cycle_id": "plc-p07-3"
+}
+]

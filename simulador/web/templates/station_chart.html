@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gráficos por posto · Dashboard da Linha</title>
+  <link rel="stylesheet" href="/static/styles.css?v=REV09">
+</head>
+<body class="station-chart-page">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Lean Manufacturing</p>
+      <h1>Dashboard da Linha</h1>
+    </div>
+    <div class="chart-top-actions">
+      <a class="chart-back" href="/" aria-label="Voltar ao dashboard"><span aria-hidden="true">←</span> Dashboard</a>
+      <div class="connection" data-testid="opc-connection">
+        <span class="connection-dot" aria-hidden="true"></span>
+        <div>
+          <strong id="connection-label">Aguardando conexão</strong>
+          <span id="updated-at">Aguardando telemetria</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="station-chart-main">
+    <div class="chart-page-heading">
+      <div>
+        <p class="section-kicker">Acompanhamento da linha</p>
+        <h2>Tempos por posto</h2>
+      </div>
+      <p id="chart-connection-note" class="chart-note" role="status">Aguardando dados dos postos.</p>
+    </div>
+    <section class="station-chart-panel" aria-labelledby="chart-heading">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">P01 – P12 <span aria-hidden="true">/</span> Segundos</p>
+          <h2 id="chart-heading">Ciclo por posto</h2>
+        </div>
+        <nav class="chart-toggle" role="group" aria-label="Indicador do gráfico">
+          <button type="button" id="show-cycle" class="chart-mode active" aria-pressed="true">Ciclo</button>
+          <button type="button" id="show-takt" class="chart-mode" aria-pressed="false">Takt time</button>
+        </nav>
+      </div>
+      <div class="station-chart-scroll" tabindex="0" aria-label="Gráfico de colunas dos 12 postos; em telas pequenas, role na horizontal">
+        <svg id="station-time-chart" viewBox="0 0 1200 380" role="img" aria-labelledby="chart-svg-title chart-svg-description">
+          <title id="chart-svg-title">Ciclo por posto, em segundos</title>
+          <desc id="chart-svg-description">Aguardando dados de P01 a P12.</desc>
+          <defs>
+            <linearGradient id="chart-column-fill" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#3b91df"/>
+              <stop offset="100%" stop-color="#2269ab"/>
+            </linearGradient>
+          </defs>
+          <g id="chart-grid"></g>
+          <g id="chart-columns"></g>
+        </svg>
+      </div>
+      <div class="chart-footer">
+        <p id="chart-help" class="chart-help">Ciclo: último tempo de ciclo informado por posto.</p>
+        <details class="chart-values">
+          <summary>Consultar valores por posto</summary>
+          <table>
+            <caption id="chart-table-caption">Ciclo por posto (s)</caption>
+            <thead><tr><th scope="col">Posto</th><th scope="col">Tempo (s)</th></tr></thead>
+            <tbody id="chart-value-rows"></tbody>
+          </table>
+        </details>
+      </div>
+    </section>
+    <noscript>Ative o JavaScript para visualizar os tempos dos postos em tempo real.</noscript>
+  </main>
+  <script src="/static/station-chart.js?v=REV09" defer></script>
+</body>
+</html>

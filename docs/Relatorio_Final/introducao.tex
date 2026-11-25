@@ -1,0 +1,27 @@
+\section{Objetivo}
+
+Este trabalho documenta, com evidências de execução, o sistema de supervisão \textit{Lean} desenvolvido pela Equipe 4 para o Cenário 25, uma linha de montagem de ar-condicionado com 12 postos, representada em uma bancada didática. O sistema integra um CLP LS XGK-CPUE, que executa o programa Ladder da linha; uma Raspberry Pi, que atua como \textit{gateway} de borda entre a porta serial do CLP e a rede IP e comanda o motor da esteira; um receptor no Windows, que persiste os eventos e serve a Dashboard web; a Instrução de Trabalho Digital (IT Digital) do posto E07; e um aplicativo Desktop que simula os 12 postos quando o CLP não está disponível. Os objetivos são: (i) descrever a arquitetura e os protocolos de cada enlace; (ii) documentar cada componente - Desktop, Dashboard, Raspberry Pi, CLP, IT Digital e APIs - a partir do código-fonte e da configuração efetivamente usados; e (iii) apresentar, para cada componente, evidências concretas de funcionamento: registros de execução com o CLP real, bancos de dados, testes automatizados, chamadas reais às APIs e capturas de tela.
+
+\subsection{Contexto: Cenário 25 -- linha de montagem de ar-condicionado}
+
+Este é o trabalho final da Equipe 4, responsável pelo Cenário 25 da disciplina: uma linha de montagem de ar-condicionado com 12 postos. A demanda do cenário é de 780 unidades por dia em 450 minutos disponíveis, o que resulta em um Takt time de
+
+\[
+\text{Takt} = \frac{450\ \text{min} \times 60\ \text{s/min}}{780\ \text{unidades}} = 34{,}6\ \text{s/unidade}.
+\]
+
+O diagnóstico do Módulo I apontou 4 \% de refugo, associado a erros de montagem e à pouca visibilidade do processo, e concentrou a análise do tempo de ciclo no posto E07 (Montagem de Tubulação). No Módulo II, os ciclos e as paradas foram simulados e os aplicativos foram integrados: Simulador da Linha, Andon Digital, Dashboard e IT Digital E07. No Módulo III, documentado neste relatório, a linha é representada por uma bancada didática com CLP e Raspberry Pi, e os mesmos aplicativos passam a receber os dados do processo físico.
+
+Duas ressalvas delimitam a leitura dos resultados. Primeira, os tempos usados nos ensaios (por exemplo, Takt de 60 s no Simulador e meta de 90 peças em 60 min na demonstração) são parâmetros de teste e não representam a demanda do Cenário 25. Segunda, a sequência da IT Digital E07 dura 36 s e ainda precisa ser compatibilizada com a meta de 34 s da E07 e com o Takt de 34,6 s. A referência simulada do Módulo II tem 40 ciclos da E07 (média de 34,0 s e desvio amostral de 0,0 s); a amostra de ciclos físicos para a comparação estatística ainda não foi coletada.
+
+\subsection{Materiais e reprodução}\label{sec:materiais}
+
+O código está organizado em duas aplicações Python. \textbf{hardware/} contém o serviço da Raspberry Pi (Modbus RTU, OPC UA, TCP, SNTP, SQLite e GPIO). \textbf{simulador/} contém o simulador Desktop (PyQt6), o receptor TCP de referência, o cliente OPC UA e a Dashboard web (FastAPI). A documentação do programa Ladder está em \textbf{docs/Documentacao\_Tecnica/DOCUMENTACAO\_CLP\_LS\_XGK.md}, com 21 capturas do projeto \cod{LAB\_NEW\_UPDATED} no XG5000 4.74. Ambiente utilizado nas verificações: Windows 11, Python 3.12.10, PyQt6 6.8.1, asyncua 1.1.5, pymodbus 3.11.3, FastAPI 0.115.11, uvicorn 0.34.0, cryptography 44.0.2 e pytest 8.3.5. Na Raspberry Pi o serviço usa Python 3.11 ou superior, gpiozero 2.0.1 e pigpio 1.78.
+
+As evidências têm três origens, sempre identificadas no texto:
+
+\begin{itemize}
+    \item \textbf{Execução real com o CLP} - arquivo \cod{hardware/logs/gateway.log} (32.140 linhas, de 27/09/2026 16:57 a 28/09/2026 13:11) e banco \cod{hardware/data/gateway.db} (18 eventos de Andon capturados no CLP pelo Gateway \cod{LINHA\_A}), além do banco do receptor \cod{simulador/data/reference\_receiver.db} (127 recepções entre 27/09 e 21/11/2026).
+    \item \textbf{Testes automatizados} - 98 testes do Simulador e 66 do Gateway, executados em 21/11/2026 (seção 9).
+    \item \textbf{Demonstração ponta a ponta com CLP emulado} - para gerar capturas de tela e medições sem o hardware, o Gateway, o receptor e a Dashboard reais foram executados contra um servidor Modbus RTU que reproduz o mapa de registradores do Ladder (\cod{clp\_emulado.py}, descrito na seção 4.6). Os resultados dessa demonstração estão sempre rotulados como ``CLP emulado''. Os bancos e portas da demonstração foram separados dos da instalação (portas 4850, 8091 e 15010), de modo que os dados reais não foram alterados.
+\end{itemize}

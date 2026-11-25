@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Configuracao local (use config.example.toml como modelo)
+config.toml
+
+# Certificados e chaves (gerados localmente, nunca versionar)
+**/certificates/**/*.pem
+**/certificates/**/*.der
+*.key
+*.pfx
+*.p12
+.env
+.env.*
+
+# Bancos de dados e dados de execucao
+*.db
+*.db-shm
+*.db-wal
+data/
+logs/
+
+# Artefatos gerados
+dist/
+simulador/backups/
+simulador/output/
+
+# LaTeX
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# SO / editores
+.DS_Store
+Thumbs.db
+desktop.ini

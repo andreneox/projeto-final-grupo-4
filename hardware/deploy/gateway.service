@@ -1,0 +1,23 @@
+[Unit]
+Description=Lean Manufacturing LS XGK Gateway
+Wants=network-online.target pigpiod.service
+After=local-fs.target network-online.target pigpiod.service
+
+[Service]
+Type=simple
+User=gateway
+Group=dialout
+WorkingDirectory=/opt/lean-gateway
+ExecStart=/opt/lean-gateway/.venv/bin/python /opt/lean-gateway/main.py --config /etc/lean-gateway/config.toml
+Restart=always
+RestartSec=3
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONDONTWRITEBYTECODE=1
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/lean-gateway /var/log/lean-gateway
+
+[Install]
+WantedBy=multi-user.target

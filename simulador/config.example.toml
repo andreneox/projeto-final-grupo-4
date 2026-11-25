@@ -1,0 +1,50 @@
+[application]
+database_path = "data/mock_line.db"
+timezone = "America/Manaus"
+takt_time_seconds = 60.0
+last_cycle_seconds = 57.5
+
+[tcp]
+host = "127.0.0.1"
+port = 15000
+connect_timeout_seconds = 5.0
+send_timeout_seconds = 5.0
+response_timeout_seconds = 5.0
+sync_on_start = false
+
+[opcua]
+enabled = true
+endpoint = "opc.tcp://0.0.0.0:4840/mock-linha/"
+namespace_uri = "urn:mock-linha:telemetria:v1"
+application_uri = "urn:mock-linha:servidor"
+certificate_path = "certificates/server_cert.der"
+private_key_path = "certificates/server_key.pem"
+trusted_clients_dir = "certificates/trusted/clients"
+
+[opcua_client]
+enabled = true
+endpoint = "opc.tcp://127.0.0.1:4840/mock-linha/"
+namespace_uri = "urn:mock-linha:telemetria:v1"
+application_uri = "urn:freeopcua:client"
+certificate_path = "certificates/client/client_cert.der"
+private_key_path = "certificates/client/client_key.pem"
+server_certificate_path = "certificates/server_cert.der"
+reconnect_seconds = 3.0
+
+[dashboard]
+host = "127.0.0.1"
+port = 8080
+shift_start = "00:00"
+shift_duration_minutes = 1440
+opcua_stale_seconds = 10.0
+
+[receiver]
+host = "0.0.0.0"
+port = 15000
+database_path = "data/reference_receiver.db"
+timezone = "America/Manaus"
+
+[desktop_api]
+# URL do endpoint POST usado pelo Start da dashboard. Vazio desabilita o comando.
+start_url = ""
+timeout_seconds = 10.0

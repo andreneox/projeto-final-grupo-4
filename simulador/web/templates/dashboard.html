@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard da Linha</title>
+  <link rel="stylesheet" href="/static/styles.css?v=REV09">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Lean Manufacturing</p>
+      <h1>Dashboard da Linha</h1>
+    </div>
+    <div class="process-actions" aria-label="Controle do processo">
+      <a href="/graficos" class="action-button chart-link">Gráficos por posto</a>
+      <a href="/instrucao/e07" class="action-button chart-link" target="_blank" rel="noopener">IT Digital E07</a>
+      <!-- <button type="button" id="configure-process" class="action-button configure">Configurar</button> -->
+      <button type="button" id="edit-production-plan" class="action-button configure">Editar plano do turno</button>
+      <button type="button" id="import-cycle-base" class="action-button configure" hidden>Importar base</button>
+      <input type="file" id="cycle-base-file" accept=".xlsx,.xlsm,.csv" hidden>
+      <button type="button" id="clear-cycle-base" class="action-button reset" hidden>Limpar base</button>
+      <button type="button" id="start-process" class="action-button start" disabled>Start</button>
+    </div>
+    <div class="connection" data-testid="opc-connection">
+      <span class="connection-dot" aria-hidden="true"></span>
+      <div>
+        <strong id="connection-label">OPC UA desconectado</strong>
+        <span id="updated-at">Aguardando telemetria</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <p id="process-feedback" class="process-feedback" role="status" aria-live="polite" hidden></p>
+    <section class="realtime" aria-labelledby="realtime-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker">Tempo real</p>
+          <h2 id="realtime-title">Postos da linha</h2>
+        </div>
+        <div class="realtime-source">
+          <span class="source-label">Fonte: OPC UA / eventos de produção</span>
+          <p id="imported-cycle-base" class="source-label" hidden>Última base importada <strong id="imported-cycle-base-name"></strong></p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="station-table" data-testid="station-table">
+          <thead>
+            <tr id="station-head">
+              <th scope="col" class="row-label">Indicador</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="row-status"><th scope="row" class="row-label">Status</th></tr>
+            <tr id="row-takt"><th scope="row" class="row-label">Takt time</th></tr>
+            <tr id="row-cycle"><th scope="row" class="row-label">Cycle time</th></tr>
+            <tr id="row-availability"><th scope="row" class="row-label">Disponibilidade</th></tr>
+            <tr id="row-performance"><th scope="row" class="row-label">Desempenho</th></tr>
+            <tr id="row-quality"><th scope="row" class="row-label">Qualidade</th></tr>
+            <tr id="row-oee"><th scope="row" class="row-label">OEE</th></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-label">Amarelo enquanto aguarda produto, verde piscando durante o processamento e verde constante após concluir. Na parada, os postos com Andon ativo ficam vermelhos e os demais ficam cinza.</p>
+    </section>
+
+    <section class="measurement-summary" aria-label="Plano e acompanhamento da produção">
+      <div><span>Meta de Produção / turno</span><strong id="production-target">—</strong></div>
+      <div><span>Tempo Disponível por turno</span><strong id="available-time">—</strong></div>
+      <div><span>Tempo decorrido</span><strong id="elapsed-time">—</strong></div>
+      <div><span>Tempo real de produção</span><strong id="productive-time">—</strong></div>
+      <div><span>Produção Estimada</span><strong id="expected-production">—</strong></div>
+      <div class="production-output"><span>Produção atual</span><strong id="current-production">0</strong></div>
+      <div class="production-defects"><span>Quantidade de defeitos</span><strong id="defect-quantity">0</strong></div>
+    </section>
+
+    <div class="summary-grid">
+      <section class="summary-section" aria-labelledby="oee-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Indicadores do turno</p>
+            <h2 id="oee-title">OEE da linha</h2>
+          </div>
+        </div>
+        <div class="factor-grid">
+          <div class="metric-tile">
+            <span>Disponibilidade</span>
+            <strong id="line-availability">—</strong>
+          </div>
+          <div class="metric-tile">
+            <span>Desempenho</span>
+            <strong id="line-performance">—</strong>
+          </div>
+          <div class="metric-tile">
+            <span>Qualidade</span>
+            <strong id="line-quality">—</strong>
+          </div>
+        </div>
+        <div class="primary-metric">
+          <span>OEE consolidado</span>
+          <strong id="line-oee">—</strong>
+        </div>
+      </section>
+
+      <section class="summary-section" aria-labelledby="downtime-title">
+        <div class="section-heading compact">
+          <div>
+            <p class="section-kicker">Ocorrências do turno</p>
+            <h2 id="downtime-title">Parada da linha</h2>
+          </div>
+          <span class="source-label">Minutos</span>
+        </div>
+        <div class="downtime-grid">
+          <div class="metric-tile quality"><span>Qualidade</span><strong id="stop-quality">—</strong></div>
+          <div class="metric-tile process"><span>Processo</span><strong id="stop-process">—</strong></div>
+          <div class="metric-tile material"><span>Material</span><strong id="stop-material">—</strong></div>
+          <div class="metric-tile equipment"><span>Equipamento</span><strong id="stop-equipment">—</strong></div>
+        </div>
+        <div class="primary-metric danger">
+          <span>Tempo total parado</span>
+          <strong id="stop-total">—</strong>
+        </div>
+        <p id="stop-overlap-note" class="downtime-note" hidden></p>
+      </section>
+    </div>
+  </main>
+
+  <!-- Configuração de tempos e protótipos desativada na dashboard.
+  <dialog id="process-dialog" class="process-dialog" aria-labelledby="process-dialog-title">
+    <header class="dialog-heading"><h2 id="process-dialog-title">Configurar o Processo</h2></header>
+    <form id="process-form">
+      <fieldset id="process-fields">
+        <legend>Tempo ciclo (s)</legend>
+        <div class="configuration-labels" aria-hidden="true"><span>Posto</span><span>Simulação (s)</span><span>Protótipo físico</span></div>
+        <div id="configuration-rows"></div>
+      </fieldset>
+      <p class="configuration-help">Informe um tempo maior que zero. Use vírgula ou ponto para decimais.</p>
+      <p id="configuration-feedback" role="alert" hidden></p>
+      <footer class="dialog-actions">
+        <button type="submit" id="confirm-configuration" class="action-button start">Confirmar</button>
+        <button type="button" id="cancel-configuration" class="action-button cancel">Cancelar</button>
+      </footer>
+    </form>
+  </dialog>
+  -->
+  <dialog id="plan-dialog" class="process-dialog" aria-labelledby="plan-dialog-title">
+    <header class="dialog-heading"><h2 id="plan-dialog-title">Plano do turno</h2></header>
+    <form id="plan-form">
+      <fieldset id="plan-fields">
+        <div class="plan-row">
+          <label for="plan-target">Meta de produção (peças)</label>
+          <input id="plan-target" type="text" inputmode="numeric" pattern="[0-9]+" required>
+        </div>
+        <div class="plan-row">
+          <label for="plan-minutes">Tempo disponível (min)</label>
+          <input id="plan-minutes" type="text" inputmode="decimal" pattern="[0-9]+([,.][0-9]{1,3})?" required>
+        </div>
+      </fieldset>
+      <p id="plan-feedback" role="alert" hidden></p>
+      <footer class="dialog-actions">
+        <button type="submit" id="save-plan" class="action-button start">Salvar</button>
+        <button type="button" id="cancel-plan" class="action-button cancel">Cancelar</button>
+      </footer>
+    </form>
+  </dialog>
+  <script src="/static/dashboard.js?v=REV09" defer></script>
+  <script src="/static/process.js?v=REV09" defer></script>
+</body>
+</html>

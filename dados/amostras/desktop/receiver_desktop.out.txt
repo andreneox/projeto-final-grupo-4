@@ -1,0 +1,7 @@
+Dashboard web: http://127.0.0.1:8092
+Receptor TCP ouvindo em 127.0.0.1:15011
+certificate does not contain the hostname in DNSNames DESKTOP-VEAB35D. Some applications will check this.
+[2026-11-21T20:24:45.831306-04:00] HORA respondida
+Cliente OPC UA: conectado
+[2026-11-21T20:24:51.208851-04:00] posto=03 botao=Material estado=ON resultado=ON ACK=enviado
+[2026-11-21T20:25:09.694850-04:00] posto=03 botao=Material estado=OFF resultado=OFF ACK=enviado

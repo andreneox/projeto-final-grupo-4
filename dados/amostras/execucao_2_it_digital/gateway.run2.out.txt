@@ -1,0 +1,693 @@
+2026-11-21 21:19:26,762 INFO MainThread gateway: Motor: disabled
+2026-11-21 21:19:26,763 INFO tcp-sender gateway: TCP: waiting for events
+2026-11-21 21:19:26,765 INFO MainThread gateway: Gateway LINHA_DEMO started
+2026-11-21 21:19:27,423 INFO modbus-poller gateway: Modbus: production count available
+2026-11-21 21:19:27,507 INFO modbus-poller gateway: Modbus: process status available
+2026-11-21 21:19:27,507 INFO modbus-poller gateway: Modbus: connected
+2026-11-21 21:19:27,557 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; PLC updated from system clock at 2026-11-22T00:19:26.777884+00:00; retrying NTP
+2026-11-21 21:19:27,643 INFO opcua-server asyncua.server.internal_server: No user manager specified. Using default permissive manager instead.
+2026-11-21 21:19:27,646 INFO opcua-server asyncua.server.internal_session: Created internal session Internal
+2026-11-21 21:19:27,668 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=11715, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,669 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15958, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,671 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15959, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15960, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15961, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15962, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15963, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=15964, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=16134, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,672 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=16135, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:27,673 INFO opcua-server asyncua.server.address_space: add_node: while adding node NumericNodeId(Identifier=16136, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>), requested parent node NumericNodeId(Identifier=15957, NamespaceIndex=0, NodeIdType=<NodeIdType.Numeric: 2>) does not exists
+2026-11-21 21:19:29,313 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,316 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,316 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,317 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,319 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,320 INFO opcua-server asyncua.common.manage_nodes: create_method Node(NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>))
+2026-11-21 21:19:29,338 WARNING opcua-server asyncua.crypto.uacrypto: certificate does not contain the hostname in DNSNames DESKTOP-VEAB35D. Some applications will check this.
+2026-11-21 21:19:29,339 INFO opcua-server asyncua.server.internal_server: starting internal server
+2026-11-21 21:19:29,339 INFO opcua-server asyncua.server.binary_server_asyncio: Listening on 0.0.0.0:4850
+2026-11-21 21:19:29,339 INFO opcua-server gateway: OPC UA: active and secure
+2026-11-21 21:19:29,765 INFO opcua-server asyncua.server.binary_server_asyncio: New connection from ('127.0.0.1', 55472)
+2026-11-21 21:19:29,766 INFO opcua-server asyncua.uaprotocol: updating server limits to: TransportLimits(max_recv_buffer=65535, max_send_buffer=65535, max_chunk_count=1601, max_message_size=104857600)
+2026-11-21 21:19:29,780 INFO opcua-server asyncua.server.uaprocessor: Create session request (None)
+2026-11-21 21:19:29,782 INFO opcua-server asyncua.server.internal_session: Created internal session ('127.0.0.1', 55472)
+2026-11-21 21:19:29,782 INFO opcua-server asyncua.server.internal_session: Create session request
+2026-11-21 21:19:29,783 INFO opcua-server asyncua.server.internal_server: get endpoint
+2026-11-21 21:19:29,788 INFO opcua-server asyncua.server.uaprocessor: Activate session request (None)
+2026-11-21 21:19:29,790 INFO opcua-server asyncua.server.internal_session: activate session
+2026-11-21 21:19:29,790 INFO opcua-server asyncua.server.internal_session: Activated internal session ('127.0.0.1', 55472) for user User(role=<UserRole.User: 3>, name=None)
+2026-11-21 21:19:29,792 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,799 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,802 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,804 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,807 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,809 INFO opcua-server asyncua.server.uaprocessor: create subscription request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,809 INFO opcua-server asyncua.server.subscription_service: create subscription
+2026-11-21 21:19:29,810 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:29,815 INFO opcua-server asyncua.server.uaprocessor: create monitored items request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,817 INFO opcua-server asyncua.server.subscription_service: create monitored items
+2026-11-21 21:19:29,817 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,818 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,819 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,819 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P01/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,820 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,821 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,821 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P02/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,822 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,822 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,822 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,822 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,822 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P03/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,823 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,824 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P04/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,824 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,824 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,824 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,824 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,826 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,826 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P05/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,827 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,827 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,828 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,828 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,829 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,829 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P06/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P07/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,830 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,831 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,831 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P08/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,831 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,832 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,832 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,832 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,832 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,832 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P09/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,834 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,834 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P10/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,835 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,836 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,836 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,836 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,836 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P11/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,836 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/Andon/Qualidade', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,837 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/Andon/Equipamento', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,837 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/Andon/Processo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,837 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/Andon/Material', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,838 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/TaktTime', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,838 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='P12/UltimoCiclo', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,838 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='Linha/TotalProduzido', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,839 INFO opcua-server asyncua.server.monitored_item_service.78: request to subscribe to datachange for node NodeId(Identifier='Linha/StatusProcesso', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>) and attribute 13
+2026-11-21 21:19:29,841 INFO opcua-server asyncua.server.subscription_service: publish request with acks []
+2026-11-21 21:19:29,843 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:29,846 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=1)]
+2026-11-21 21:19:30,788 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:30,851 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:31,802 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:31,864 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:32,560 INFO opcua-server asyncua.server.uaprocessor: call request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:32,560 INFO opcua-server asyncua.server.address_space: Calling: CallMethodRequest(ObjectId=NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), MethodId=NodeId(Identifier='Linha/CarregarBaseCiclos', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), InputArguments=[Variant(Value=[8.0, 8.2, 7.9, 8.1, 8.0, 8.3, 7.8, 8.0, 8.1, 8.0, 7.9, 8.2, 9.0, 9.1, 8.8, 9.2, 9.0, 8.9, 9.1, 9.3, 9.0, 8.8, 9.1, 9.0, 7.5, 7.4, 7.6, 7.5, 7.7, 7.4, 7.5, 7.6, 7.3, 7.5, 7.6, 7.4, 10.0, 10.3, 9.8, 10.1, 10.2, 9.9, 10.0, 10.1, 10.0, 10.2, 9.9, 10.1, 12.0, 12.4, 12.1, 11.9, 12.2, 12.0, 12.3, 12.1, 11.8, 12.0, 12.2, 12.0, 9.5, 9.2, 9.6, 9.4, 9.5, 9.3, 9.7, 9.5, 9.4, 9.6, 9.5, 9.4, 36.0, 35.5, 36.4, 35.8, 36.1, 36.0, 35.9, 36.2, 35.7, 36.3, 36.0, 36.1, 6.0, 6.1, 5.9, 6.0, 6.2, 6.0, 5.8, 6.1, 6.0, 6.1, 5.9, 6.0, 6.5, 6.4, 6.6, 6.5, 6.3, 6.6, 6.5, 6.4, 6.7, 6.5, 6.4, 6.6, 7.0, 7.2, 6.9, 7.1, 7.0, 7.3, 7.0, 7.1, 6.9, 7.2, 7.0, 7.1, 11.0, 10.8, 11.2, 11.0, 11.1, 10.9, 11.0, 11.3, 11.0, 10.8, 11.1, 11.0, 8.0, 8.1, 7.9, 8.0, 8.2, 7.8, 8.0, 8.1, 8.0, 7.9, 8.2, 8.0], VariantType=<VariantType.Double: 11>, Dimensions=None, is_array=True)])
+2026-11-21 21:19:37,269 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:37,270 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:37,707 INFO opcua-server asyncua.server.uaprocessor: call request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:37,707 INFO opcua-server asyncua.server.address_space: Calling: CallMethodRequest(ObjectId=NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), MethodId=NodeId(Identifier='Linha/IniciarSimulacao', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), InputArguments=[])
+2026-11-21 21:19:39,115 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,227 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,323 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,416 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,526 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,590 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,717 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,812 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:39,908 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:40,018 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:40,111 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:40,206 INFO opcua-server asyncua.server.uaprocessor: Server wants to send publish answer but no publish request is available,enqueuing publish results callback, length of queue is 1
+2026-11-21 21:19:40,229 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:40,230 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=2)]
+2026-11-21 21:19:40,230 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:40,231 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=3)]
+2026-11-21 21:19:41,236 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:41,236 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:42,239 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:42,241 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:43,236 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:43,238 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:44,236 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:44,237 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:45,233 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:45,233 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:46,232 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:46,232 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:47,245 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:47,245 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:47,529 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=4)]
+2026-11-21 21:19:47,812 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=5)]
+2026-11-21 21:19:48,113 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=6)]
+2026-11-21 21:19:48,253 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:48,285 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:48,616 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=7)]
+2026-11-21 21:19:49,231 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:49,296 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:50,238 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:50,301 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:51,232 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:51,294 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:52,240 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:52,304 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:53,252 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:53,315 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:54,250 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:54,312 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:55,260 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:55,323 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:56,258 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:56,323 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:57,020 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=8)]
+2026-11-21 21:19:57,226 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=9)]
+2026-11-21 21:19:57,271 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:57,334 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:57,523 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=10)]
+2026-11-21 21:19:57,568 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; system clock already applied; retrying
+2026-11-21 21:19:57,819 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=11)]
+2026-11-21 21:19:58,121 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=12)]
+2026-11-21 21:19:58,294 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:58,295 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=13)]
+2026-11-21 21:19:58,341 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:58,929 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=14)]
+2026-11-21 21:19:59,287 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:19:59,351 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:00,292 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:00,341 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:01,288 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:01,348 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:02,289 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:02,352 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:03,297 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:03,360 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:04,309 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:04,420 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:05,331 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:05,424 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:05,915 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=15)]
+2026-11-21 21:20:06,212 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=16)]
+2026-11-21 21:20:06,339 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:06,463 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:06,526 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=17)]
+2026-11-21 21:20:06,824 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=18)]
+2026-11-21 21:20:07,126 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=19)]
+2026-11-21 21:20:07,344 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:07,503 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:07,613 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=20)]
+2026-11-21 21:20:08,352 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:08,416 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=21)]
+2026-11-21 21:20:08,541 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:08,715 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=22)]
+2026-11-21 21:20:09,029 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=23)]
+2026-11-21 21:20:09,344 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:09,518 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=24)]
+2026-11-21 21:20:09,580 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:10,337 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:10,586 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:11,338 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:11,589 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:12,341 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:12,593 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:13,348 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:13,598 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:14,352 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:14,603 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:15,355 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:15,595 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:15,625 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=25)]
+2026-11-21 21:20:15,908 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=26)]
+2026-11-21 21:20:16,212 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=27)]
+2026-11-21 21:20:16,384 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:16,636 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:16,715 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=28)]
+2026-11-21 21:20:17,327 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=29)]
+2026-11-21 21:20:17,374 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:17,514 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=30)]
+2026-11-21 21:20:17,624 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:17,813 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=31)]
+2026-11-21 21:20:18,115 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=32)]
+2026-11-21 21:20:18,364 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:18,427 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=33)]
+2026-11-21 21:20:18,676 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:18,724 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=34)]
+2026-11-21 21:20:19,211 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=35)]
+2026-11-21 21:20:19,368 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:19,526 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=36)]
+2026-11-21 21:20:19,713 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:20,371 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:20,750 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:21,382 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:21,762 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:22,378 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:22,750 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:23,381 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:23,762 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:24,385 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:24,767 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:25,320 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=37)]
+2026-11-21 21:20:25,382 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:25,620 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=38)]
+2026-11-21 21:20:25,809 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:25,905 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=39)]
+2026-11-21 21:20:26,379 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:26,426 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=40)]
+2026-11-21 21:20:26,728 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=41)]
+2026-11-21 21:20:26,853 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:27,027 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=42)]
+2026-11-21 21:20:27,218 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=43)]
+2026-11-21 21:20:27,376 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:27,581 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; system clock already applied; retrying
+2026-11-21 21:20:27,848 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:28,386 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:28,894 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:28,926 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=44)]
+2026-11-21 21:20:29,228 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=45)]
+2026-11-21 21:20:29,400 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:29,402 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=46)]
+2026-11-21 21:20:29,716 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=47)]
+2026-11-21 21:20:29,951 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:30,015 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=48)]
+2026-11-21 21:20:30,219 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=49)]
+2026-11-21 21:20:30,393 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:30,522 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=50)]
+2026-11-21 21:20:30,962 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:31,403 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:31,404 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=51)]
+2026-11-21 21:20:31,718 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=52)]
+2026-11-21 21:20:31,907 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=53)]
+2026-11-21 21:20:31,970 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:32,413 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:32,508 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=54)]
+2026-11-21 21:20:32,978 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:33,407 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:33,974 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:34,413 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:34,975 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:35,227 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=55)]
+2026-11-21 21:20:35,414 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:35,525 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=56)]
+2026-11-21 21:20:35,822 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=57)]
+2026-11-21 21:20:36,011 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:36,123 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=58)]
+2026-11-21 21:20:36,433 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:36,609 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=59)]
+2026-11-21 21:20:37,049 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:37,441 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:38,028 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=60)]
+2026-11-21 21:20:38,092 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:38,322 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=61)]
+2026-11-21 21:20:38,447 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:38,619 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=62)]
+2026-11-21 21:20:38,922 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=63)]
+2026-11-21 21:20:39,109 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:39,111 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=64)]
+2026-11-21 21:20:39,424 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=65)]
+2026-11-21 21:20:39,456 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:39,724 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=66)]
+2026-11-21 21:20:40,024 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=67)]
+2026-11-21 21:20:40,148 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:40,212 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=68)]
+2026-11-21 21:20:40,465 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:40,497 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=69)]
+2026-11-21 21:20:41,016 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=70)]
+2026-11-21 21:20:41,190 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:41,472 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:42,191 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:42,475 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:42,714 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=71)]
+2026-11-21 21:20:42,983 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=72)]
+2026-11-21 21:20:43,232 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:43,314 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=73)]
+2026-11-21 21:20:43,472 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:43,823 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=74)]
+2026-11-21 21:20:44,293 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:44,294 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=75)]
+2026-11-21 21:20:44,466 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:44,624 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=76)]
+2026-11-21 21:20:44,921 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=77)]
+2026-11-21 21:20:45,219 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=78)]
+2026-11-21 21:20:45,282 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:45,472 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:45,521 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=79)]
+2026-11-21 21:20:45,818 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=80)]
+2026-11-21 21:20:46,027 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=81)]
+2026-11-21 21:20:46,324 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:46,451 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:46,624 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=82)]
+2026-11-21 21:20:47,185 INFO opcua-server asyncua.server.uaprocessor: call request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:47,187 INFO opcua-server asyncua.server.address_space: Calling: CallMethodRequest(ObjectId=NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), MethodId=NodeId(Identifier='Linha/BaseCiclosCarregada', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), InputArguments=[])
+2026-11-21 21:20:47,310 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:47,470 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:48,226 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=83)]
+2026-11-21 21:20:48,318 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:48,479 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:48,527 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=84)]
+2026-11-21 21:20:48,811 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=85)]
+2026-11-21 21:20:49,127 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=86)]
+2026-11-21 21:20:49,315 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:49,410 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=87)]
+2026-11-21 21:20:49,488 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:49,616 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=88)]
+2026-11-21 21:20:50,221 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=89)]
+2026-11-21 21:20:50,316 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:50,488 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:50,820 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=90)]
+2026-11-21 21:20:51,123 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=91)]
+2026-11-21 21:20:51,330 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=92)]
+2026-11-21 21:20:51,359 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:51,486 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:51,922 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=93)]
+2026-11-21 21:20:52,366 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:52,512 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:53,367 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:53,539 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:54,316 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=94)]
+2026-11-21 21:20:54,362 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:54,520 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=95)]
+2026-11-21 21:20:54,552 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:54,828 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=96)]
+2026-11-21 21:20:55,418 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:55,513 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=97)]
+2026-11-21 21:20:55,543 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:56,319 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=98)]
+2026-11-21 21:20:56,408 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:56,534 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:56,614 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=99)]
+2026-11-21 21:20:56,915 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=100)]
+2026-11-21 21:20:57,422 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:57,518 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=101)]
+2026-11-21 21:20:57,548 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:57,595 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; system clock already applied; retrying
+2026-11-21 21:20:57,823 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=102)]
+2026-11-21 21:20:58,121 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=103)]
+2026-11-21 21:20:58,440 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:58,562 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:58,627 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=104)]
+2026-11-21 21:20:58,929 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=105)]
+2026-11-21 21:20:59,226 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=106)]
+2026-11-21 21:20:59,479 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:59,573 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:20:59,715 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=107)]
+2026-11-21 21:21:00,021 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=108)]
+2026-11-21 21:21:00,314 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=109)]
+2026-11-21 21:21:00,501 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:00,595 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:00,596 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=110)]
+2026-11-21 21:21:01,119 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=111)]
+2026-11-21 21:21:01,555 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:01,619 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:02,327 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=112)]
+2026-11-21 21:21:02,562 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:02,627 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:02,628 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=113)]
+2026-11-21 21:21:02,927 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=114)]
+2026-11-21 21:21:03,421 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=115)]
+2026-11-21 21:21:03,609 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:03,610 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:03,721 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=116)]
+2026-11-21 21:21:04,021 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=117)]
+2026-11-21 21:21:04,319 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=118)]
+2026-11-21 21:21:04,524 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=119)]
+2026-11-21 21:21:04,634 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:04,636 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:05,126 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=120)]
+2026-11-21 21:21:05,626 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:05,628 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:06,629 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:06,631 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:07,626 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:07,627 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:08,526 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=121)]
+2026-11-21 21:21:08,636 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:08,637 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:08,813 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=122)]
+2026-11-21 21:21:09,019 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=123)]
+2026-11-21 21:21:09,318 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=124)]
+2026-11-21 21:21:09,619 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=125)]
+2026-11-21 21:21:09,665 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:09,665 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:09,923 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=126)]
+2026-11-21 21:21:10,112 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=127)]
+2026-11-21 21:21:10,427 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=128)]
+2026-11-21 21:21:10,677 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:10,679 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:11,313 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=129)]
+2026-11-21 21:21:11,521 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=130)]
+2026-11-21 21:21:11,695 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:11,697 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:11,823 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=131)]
+2026-11-21 21:21:12,612 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=132)]
+2026-11-21 21:21:12,691 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:12,693 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:12,928 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=133)]
+2026-11-21 21:21:13,230 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=134)]
+2026-11-21 21:21:13,498 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=135)]
+2026-11-21 21:21:13,688 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:13,720 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:13,818 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=136)]
+2026-11-21 21:21:14,020 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=137)]
+2026-11-21 21:21:14,316 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=138)]
+2026-11-21 21:21:14,615 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=139)]
+2026-11-21 21:21:14,710 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:14,741 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:15,709 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:15,758 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:16,701 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:16,762 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:17,704 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:17,769 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:18,703 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:18,767 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:19,322 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=140)]
+2026-11-21 21:21:19,704 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:19,706 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=141)]
+2026-11-21 21:21:19,765 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:19,921 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=142)]
+2026-11-21 21:21:20,520 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=143)]
+2026-11-21 21:21:20,706 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:20,769 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:20,818 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=144)]
+2026-11-21 21:21:21,115 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=145)]
+2026-11-21 21:21:21,319 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=146)]
+2026-11-21 21:21:21,728 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:21,792 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:21,917 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=147)]
+2026-11-21 21:21:22,721 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=148)]
+2026-11-21 21:21:22,722 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:22,781 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:23,017 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=149)]
+2026-11-21 21:21:23,318 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=150)]
+2026-11-21 21:21:23,740 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:23,802 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:23,913 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=151)]
+2026-11-21 21:21:24,418 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=152)]
+2026-11-21 21:21:24,736 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:24,816 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=153)]
+2026-11-21 21:21:24,845 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:25,628 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=154)]
+2026-11-21 21:21:25,751 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:25,846 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:25,928 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=155)]
+2026-11-21 21:21:26,115 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=156)]
+2026-11-21 21:21:26,413 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=157)]
+2026-11-21 21:21:26,714 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=158)]
+2026-11-21 21:21:26,762 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:26,873 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:27,018 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=159)]
+2026-11-21 21:21:27,523 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=160)]
+2026-11-21 21:21:27,599 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; system clock already applied; retrying
+2026-11-21 21:21:27,788 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:27,820 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=161)]
+2026-11-21 21:21:27,882 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:28,120 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=162)]
+2026-11-21 21:21:28,797 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:28,911 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=163)]
+2026-11-21 21:21:28,911 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:29,513 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=164)]
+2026-11-21 21:21:29,733 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=165)]
+2026-11-21 21:21:29,795 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:29,919 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:30,012 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=166)]
+2026-11-21 21:21:30,616 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=167)]
+2026-11-21 21:21:30,806 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:30,902 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=168)]
+2026-11-21 21:21:30,932 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:31,109 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=169)]
+2026-11-21 21:21:31,423 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=170)]
+2026-11-21 21:21:31,718 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=171)]
+2026-11-21 21:21:31,779 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:31,968 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:32,522 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=172)]
+2026-11-21 21:21:32,788 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:32,821 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=173)]
+2026-11-21 21:21:33,010 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:33,106 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=174)]
+2026-11-21 21:21:33,614 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=175)]
+2026-11-21 21:21:33,804 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:33,886 INFO tcp-sender gateway: TCP: event 1 confirmed
+2026-11-21 21:21:33,888 INFO tcp-sender gateway: TCP: waiting for events
+2026-11-21 21:21:34,055 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:34,804 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:35,058 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:35,814 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:36,064 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:36,824 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:37,059 INFO opcua-server asyncua.server.uaprocessor: call request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:37,059 INFO opcua-server asyncua.server.address_space: Calling: CallMethodRequest(ObjectId=NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), MethodId=NodeId(Identifier='Linha/BaseCiclosCarregada', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), InputArguments=[])
+2026-11-21 21:21:37,060 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:37,843 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:38,063 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:38,857 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:39,108 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:39,863 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:40,113 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:40,867 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:41,119 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:41,858 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:42,112 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:42,866 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:43,121 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:43,646 INFO tcp-sender gateway: TCP: event 2 confirmed
+2026-11-21 21:21:43,646 INFO tcp-sender gateway: TCP: waiting for events
+2026-11-21 21:21:43,704 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=176)]
+2026-11-21 21:21:43,861 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:44,115 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:44,858 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:45,110 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:45,725 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=177)]
+2026-11-21 21:21:45,880 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:46,023 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=178)]
+2026-11-21 21:21:46,146 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:46,211 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=179)]
+2026-11-21 21:21:46,810 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=180)]
+2026-11-21 21:21:46,870 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:47,125 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=181)]
+2026-11-21 21:21:47,169 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:47,865 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:48,183 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:48,814 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=182)]
+2026-11-21 21:21:48,876 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:49,020 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=183)]
+2026-11-21 21:21:49,190 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:49,615 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=184)]
+2026-11-21 21:21:49,867 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:50,188 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:50,872 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:51,190 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:51,319 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=185)]
+2026-11-21 21:21:51,526 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=186)]
+2026-11-21 21:21:51,830 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=187)]
+2026-11-21 21:21:51,875 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:52,116 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=188)]
+2026-11-21 21:21:52,241 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:52,415 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=189)]
+2026-11-21 21:21:52,716 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=190)]
+2026-11-21 21:21:52,888 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:53,268 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:53,890 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:54,269 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:54,622 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=191)]
+2026-11-21 21:21:54,889 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:54,922 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=192)]
+2026-11-21 21:21:55,264 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:55,722 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=193)]
+2026-11-21 21:21:55,897 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:56,278 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:56,909 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:57,289 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:57,606 INFO sntp-client gateway: SNTP: unavailable: SNTP query to 127.0.0.1:123 failed: [WinError 10054] Foi forçado o cancelamento de uma conexão existente pelo host remoto; system clock already applied; retrying
+2026-11-21 21:21:57,922 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:58,301 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:58,937 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:59,327 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:21:59,946 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:00,326 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:00,951 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:01,334 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:01,416 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=194)]
+2026-11-21 21:22:01,730 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=195)]
+2026-11-21 21:22:01,966 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:02,013 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=196)]
+2026-11-21 21:22:02,376 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:02,993 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:03,377 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:04,010 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:04,389 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:05,001 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:05,442 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:05,998 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:06,442 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:06,713 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=197)]
+2026-11-21 21:22:06,999 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:06,999 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=198)]
+2026-11-21 21:22:07,315 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=199)]
+2026-11-21 21:22:07,465 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:07,926 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=200)]
+2026-11-21 21:22:08,002 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:08,442 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:08,523 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=201)]
+2026-11-21 21:22:08,715 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=202)]
+2026-11-21 21:22:09,010 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:09,011 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=203)]
+2026-11-21 21:22:09,325 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=204)]
+2026-11-21 21:22:09,447 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:09,619 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=205)]
+2026-11-21 21:22:09,823 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=206)]
+2026-11-21 21:22:09,997 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:10,107 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=207)]
+2026-11-21 21:22:10,408 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=208)]
+2026-11-21 21:22:10,469 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:10,724 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=209)]
+2026-11-21 21:22:11,007 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:11,289 INFO opcua-server asyncua.server.uaprocessor: call request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:11,289 INFO opcua-server asyncua.server.address_space: Calling: CallMethodRequest(ObjectId=NodeId(Identifier='Linha', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), MethodId=NodeId(Identifier='Linha/LimparBase', NamespaceIndex=2, NodeIdType=<NodeIdType.String: 3>), InputArguments=[])
+2026-11-21 21:22:13,783 INFO opcua-server asyncua.server.subscription_service: publish request with acks [SubscriptionAcknowledgement(SubscriptionId=78, SequenceNumber=210)]
+2026-11-21 21:22:13,784 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:13,786 INFO opcua-server asyncua.server.uaprocessor: Read request (User(role=<UserRole.User: 3>, name=None))
+2026-11-21 21:22:13,906 INFO MainThread gateway: Stop file received
+2026-11-21 21:22:13,906 INFO MainThread gateway: Gateway stopping
+2026-11-21 21:22:13,906 INFO MainThread gateway: Stopping motor
+2026-11-21 21:22:13,906 INFO MainThread gateway: Stopping SNTP
+2026-11-21 21:22:13,907 INFO MainThread gateway: Stopping OPC UA
+2026-11-21 21:22:13,991 INFO opcua-server asyncua.server.binary_server_asyncio: Closing asyncio socket server
+2026-11-21 21:22:13,996 INFO opcua-server asyncua.server.binary_server_asyncio: Lost connection from ('127.0.0.1', 55472), None
+2026-11-21 21:22:14,000 INFO opcua-server asyncua.server.uaprocessor: Cleanup client connection: ('127.0.0.1', 55472)
+2026-11-21 21:22:14,126 INFO opcua-server asyncua.server.internal_session: close session ('127.0.0.1', 55472)
+2026-11-21 21:22:14,132 INFO opcua-server asyncua.server.subscription_service: delete subscriptions: [78]
+2026-11-21 21:22:14,133 INFO opcua-server asyncua.server.internal_subscription: stopping internal subscription 78
+2026-11-21 21:22:14,133 INFO opcua-server asyncua.server.internal_subscription: exiting _subscription_loop for 78
+2026-11-21 21:22:14,135 INFO opcua-server asyncua.server.internal_server: stopping internal server
+2026-11-21 21:22:14,638 INFO opcua-server asyncua.server.internal_session: close session Internal
+2026-11-21 21:22:14,638 INFO opcua-server asyncua.server.subscription_service: delete subscriptions: []
+2026-11-21 21:22:14,639 INFO MainThread gateway: Stopping Modbus
+2026-11-21 21:22:15,050 INFO MainThread gateway: Stopping TCP
+2026-11-21 21:22:15,050 INFO MainThread gateway: Stopping SQLite
+2026-11-21 21:22:15,053 INFO MainThread gateway: Gateway stopped

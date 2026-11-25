@@ -1,0 +1,93 @@
+\section{APIs e protocolos (item 2f)}
+
+O sistema expõe quatro interfaces: a API HTTP e os WebSockets do receptor, o espaço de endereços OPC UA do Gateway (e do Desktop), o protocolo binário de Andon sobre TCP e o mapa Modbus do CLP (Tabela \ref{tab:mapa}).
+
+\subsection{API HTTP e WebSocket do receptor}
+
+Implementada em \cod{simulador/web/dashboard.py} (FastAPI). Os corpos são JSON validados por modelos Pydantic com \cod{extra='forbid'}; valores fora do domínio retornam 422. Todas as respostas trazem \cod{Cache-Control: no-store} e \cod{X-Lean-Revision}. Os comandos que acionam o CLP recusam requisições de outra origem (403, proteção contra CSRF a partir de outra página) e aceitam um comando por vez (409); 503 indica Gateway ou banco indisponível e 504, comando sem confirmação do Gateway.
+
+{\footnotesize
+\begin{longtable}{|>{\raggedright\arraybackslash}p{1.1cm}|>{\raggedright\arraybackslash}p{4.4cm}|>{\raggedright\arraybackslash}p{6.4cm}|>{\raggedright\arraybackslash}p{2.6cm}|}
+\caption{Rotas da API do receptor (porta 8081).}\label{tab:api}\\
+\hline
+\textbf{Método} & \textbf{Rota} & \textbf{Função} & \textbf{Códigos} \\ \hline
+\endfirsthead
+\hline
+\textbf{Método} & \textbf{Rota} & \textbf{Função} & \textbf{Códigos} \\ \hline
+\endhead
+GET & \cod{/api/version} & Revisão dos cálculos, recursos e fórmula do desempenho. & 200 \\ \hline
+GET & \cod{/api/snapshot} & Estado completo: telemetria OPC UA (12 postos, Andons, Takt, ciclo, estado, contador) e indicadores (\cod{analytics}). & 200 \\ \hline
+GET / PUT & \cod{/api/process/production-plan} & Lê ou grava o plano do turno: \cod{production\_target} (inteiro > 0) e \cod{available\_time\_minutes} (> 0). & 200, 422, 503 \\ \hline
+GET & \cod{/api/process/cycle-base} & Informa se o controle do CLP está disponível e se a base foi conferida (\cod{BaseCiclosCarregada}). & 200 \\ \hline
+POST & \cod{/api/process/cycle-base?filename=} & Recebe a planilha (até 1 MB, \cod{.xlsx}, \cod{.xlsm} ou \cod{.csv}), valida 12 ciclos por posto (0,1 a 6553,5 s) e chama \cod{CarregarBaseCiclos}. & 200, 403, 409, 413, 422, 503, 504 \\ \hline
+POST & \cod{/api/process/start} & Chama \cod{IniciarSimulacao}; abre a sessão de medição quando o Ladder confirma. & 200, 403, 409, 503, 504 \\ \hline
+POST & \cod{/api/process/clear-base} & Chama \cod{LimparBase} e, confirmado o reset, apaga produção, defeitos e paradas do dia. & 200, 403, 409, 503, 504 \\ \hline
+GET / PUT & \cod{/api/process/configuration} & Tempo de ciclo e indicação de protótipo físico dos 12 postos (exatamente 12, valores finitos e positivos). & 200, 422, 503 \\ \hline
+POST & \cod{/api/runtime/events} & Eventos do simulador: \cod{andon}, \cod{cycle}, \cod{session\_start}, \cod{production\_plan} e \cod{reset\_day}; idempotente por \cod{event\_id}. & 200, 409, 422, 503 \\ \hline
+GET & \cod{/api/instruction/e07} & Estado da IT Digital (slide, status, ciclo, tempo, parada). & 200 \\ \hline
+WS & \cod{/ws} & Envia o \cod{/api/snapshot} a cada 1 s. & - \\ \hline
+WS & \cod{/ws/instruction/e07} & Envia o estado da IT a cada 100 ms. & - \\ \hline
+GET & \cod{/}, \cod{/graficos}, \cod{/instrucao/e07} & Páginas HTML (Dashboard, gráficos por posto e IT Digital). & 200 \\ \hline
+\end{longtable}
+}
+
+\textbf{Evidência.} A Tabela \ref{tab:apilog} reproduz as chamadas feitas à API real durante a demonstração de 21/11/2026, na ordem em que ocorreram, com as respostas recebidas.
+
+{\footnotesize
+\begin{longtable}{|>{\centering\arraybackslash}p{1.2cm}|>{\raggedright\arraybackslash}p{4.6cm}|>{\centering\arraybackslash}p{1.0cm}|>{\raggedright\arraybackslash}p{7.6cm}|}
+\caption{Chamadas reais à API (receptor na porta 8091, Gateway real, CLP emulado).}\label{tab:apilog}\\
+\hline
+\textbf{Hora} & \textbf{Requisição} & \textbf{Código} & \textbf{Resposta (resumo)} \\ \hline
+\endfirsthead
+\hline
+\textbf{Hora} & \textbf{Requisição} & \textbf{Código} & \textbf{Resposta (resumo)} \\ \hline
+\endhead
+21:14:02 & GET \cod{/api/version} & 200 & \cod{revision: 2026-11-20.01}; recursos \cod{station\_time\_chart}, \cod{reconciled\_downtime}, \cod{digital\_work\_instruction\_e07}. \\ \hline
+21:14:03 & PUT \cod{/api/process/production-plan} \{90, 60,0\} & 200 & \cod{\{production\_target: 90, available\_time\_minutes: 60.0\}} \\ \hline
+21:14:04 & GET \cod{/api/process/cycle-base} & 200 & \cod{\{available: true, ready: false\}} \\ \hline
+21:14:09 & POST \cod{/api/process/cycle-base} (1.223 bytes, \cod{base\_demo.csv}) & 200 & ``Base carregada e conferida no CLP.'' - 288 palavras gravadas e relidas em 12 blocos ($\approx$5,3 s). \\ \hline
+21:14:09 & GET \cod{/api/process/cycle-base} & 200 & \cod{\{available: true, ready: true\}} \\ \hline
+21:14:10 & POST \cod{/api/process/start} com \cod{Origin: http://evil.example} & \textbf{403} & ``Abra a dashboard para executar este comando do CLP.'' - recusado, nenhum pulso enviado. \\ \hline
+21:14:13 & POST \cod{/api/process/start} & 200 & \cod{\{result: 0, confirmed: true\}} ``Início confirmado pelo CLP.'' ($\approx$3,0 s: pulso de 2 s em \cod{P10002} e confirmação pelo estado 2). \\ \hline
+21:18:20 & GET \cod{/api/instruction/e07} & 200 & \cod{source: plc, slide: 4, status: running, cycle\_id: plc-p07-4, elapsed\_seconds: 28.59} \\ \hline
+21:18:20 & POST \cod{/api/runtime/events} com \cod{station: 13} & \textbf{422} & ``Input should be less than or equal to 12'' - evento inválido rejeitado pela validação. \\ \hline
+21:18:23 & POST \cod{/api/process/clear-base} & 200 & ``Base do dia limpa. Aguardando o próximo Start confirmado.'' ($\approx$2,7 s). \\ \hline
+21:18:27 & GET \cod{/api/snapshot} & 200 & \cod{connected: true, plc\_production\_count: 0} (contador zerado pelo reset). \\ \hline
+\end{longtable}
+}
+
+\subsection{OPC UA}
+
+O Gateway (e o Desktop, no modo simulado) publica o endpoint \cod{opc.tcp://<gateway>:4840/mock-linha/}, namespace \cod{urn:mock-linha:telemetria:v1}, com uma única política: \cod{Basic256Sha256} em modo \cod{SignAndEncrypt}. Não há endpoint \cod{None} nem modo somente assinado. O servidor só aceita clientes cujo certificado esteja na pasta de confiança, dentro da validade, com \cod{ExtendedKeyUsage = clientAuth} e com \cod{ApplicationUri} igual ao da sessão; o cliente do receptor, por sua vez, fixa o certificado esperado do servidor. As variáveis são somente leitura para os clientes (Tabela \ref{tab:opcua}).
+
+{\footnotesize
+\begin{longtable}{|>{\raggedright\arraybackslash}p{5.4cm}|>{\raggedright\arraybackslash}p{2.6cm}|>{\raggedright\arraybackslash}p{6.6cm}|}
+\caption{Espaço de endereços OPC UA (NodeIds do tipo \textit{string}).}\label{tab:opcua}\\
+\hline
+\textbf{NodeId} & \textbf{Tipo} & \textbf{Origem / efeito} \\ \hline
+\endfirsthead
+\hline
+\textbf{NodeId} & \textbf{Tipo} & \textbf{Origem / efeito} \\ \hline
+\endhead
+\cod{Pnn/Andon/Qualidade}, \cod{.../Equipamento}, \cod{.../Processo}, \cod{.../Material} (nn = 01..12) & Boolean (48) & Bits de \cod{D109}-\cod{D111}. \\ \hline
+\cod{Pnn/TaktTime}, \cod{Pnn/UltimoCiclo} & Double (24) & UInt32 de \cod{D113}-\cod{D160} convertidos para segundos. \\ \hline
+\cod{Linha/StatusProcesso} & vetor de 12 Int32 & \cod{D1651}-\cod{D1662}; -1 antes da primeira leitura válida. \\ \hline
+\cod{Linha/TotalProduzido} & Int32 & \cod{D16052}; -1 antes da primeira leitura válida. \\ \hline
+\cod{Linha/CarregarBaseCiclos(144 tempos)} & método & Grava e confere \cod{D17001}-\cod{D17288}. \\ \hline
+\cod{Linha/BaseCiclosCarregada()} & método & Retorna se os 12 blocos foram conferidos. \\ \hline
+\cod{Linha/IniciarSimulacao()} & método & Pulso de 2 s em \cod{P10002}; retorna o instante da confirmação. \\ \hline
+\cod{Linha/LimparBase()} & método & Pulso de 2 s em \cod{P10003}; confere \cod{D16052 = 0}. \\ \hline
+\cod{Linha/DefinirVelocidadeMotor(UInt16 0..100)} & método & Escreve \cod{D1200}. \\ \hline
+\cod{Linha/DefinirParada(Boolean)} & método & Altera somente o bit 0 de \cod{D1201} (leitura-modificação-escrita). \\ \hline
+\end{longtable}
+}
+
+Os métodos entram na fila do \cod{plc\_poller} e são executados na mesma \textit{thread} da porta serial; o cliente só recebe sucesso depois da confirmação da escrita Modbus. \textbf{Evidência:} nas duas execuções da demonstração o cliente do receptor conectou-se ao Gateway real (``Cliente OPC UA: conectado''; no Gateway, ``OPC UA: active and secure'') e os métodos \cod{CarregarBaseCiclos}, \cod{BaseCiclosCarregada}, \cod{IniciarSimulacao} e \cod{LimparBase} foram chamados com sucesso pela API (Tabela \ref{tab:apilog}). Os testes \cod{test\_secure\_server\_exposes\_and\_updates\_the\_same\_72\_nodes}, \cod{test\_wrong\_server\_certificate\_is\_rejected}, \cod{test\_unknown\_client\_certificate\_is\_rejected} e \cod{test\_expired\_client\_certificate\_is\_rejected} comprovam a publicação dos nós e a recusa de certificados desconhecidos, vencidos ou de servidor incorreto.
+
+\subsection{Protocolo binário de Andon (TCP)}
+
+Cada evento tem exatamente 16 bytes, com inteiros de 16 bits em \textit{big-endian} e data e hora em BCD (Tabela \ref{tab:decode}): tipo (\cod{00 01} do CLP ou do Desktop; \cod{00 02} para eventos do simulador via API), posto (1 a 12), mês, ano, hora, dia, segundo, minuto, século e dia da semana (0 = domingo), botão (1 Qualidade, 2 Equipamento, 3 Processo, 4 Material) e estado (1 ligado, 2 desligado). O receptor lê os 16 bytes, grava a recepção no SQLite e só então responde com o ACK de 22 bytes ASCII - vinte caracteres \cod{0} seguidos de \cod{15}, sem quebra de linha. Formato inválido, posto ou botão desconhecido e falha de banco fecham a conexão sem ACK, e o remetente tenta de novo. O pedido de hora é \cod{00 01} seguido de 14 bytes zero e a resposta, oito bytes BCD.
+
+A política do receptor para casos excepcionais (\cod{test\_reference\_receiver\_exception\_policy}) é: ON com ocorrência já aberta $\rightarrow$ \cod{ON\_REPETIDO}; OFF sem ocorrência aberta $\rightarrow$ \cod{OFF\_SEM\_ABERTURA}; evento anterior ao último da mesma chave posto/botão $\rightarrow$ \cod{ATRASADO}. Todos recebem ACK. Um reenvio idêntico (mesmos 16 bytes, por exemplo após a perda do ACK) é reconhecido pela tabela \cod{processed\_event} e recebe novo ACK sem ser aplicado outra vez (\cod{test\_exact\_retransmission\_is\_acked\_without\_reapplying\_event}).
+
+\textbf{Limite conhecido.} O pacote não tem identificador de evento. Dois eventos legítimos idênticos no mesmo segundo produziriam os mesmos 16 bytes; por isso o sistema garante fila durável e entrega com nova tentativa, mas não processamento exatamente uma vez. Para essa garantia, o protocolo precisaria incluir um identificador.

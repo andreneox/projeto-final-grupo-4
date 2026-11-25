@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+config.toml
+data/
+certificates/
+backups/
+*.db
+*.db-shm
+*.db-wal
+
